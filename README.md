@@ -18,3 +18,8 @@ Ce site contient et suit essentiellement le curriculum de la première année ma
 ce site est 'responsive', à l'aide du framework bootstrap.css et du langage javascript, donc il est disponible, ayant une bonne visibilité, sur tous les medias (bureau, laptop, tablette et smartphone). Par contre, c'était conçu avant la sortie de la version actuelle de Bootstrap 4 et donc ne bénéficie pas des nouveautés qu'apportent cette version.
 
 Ce site est actuellement statique et donc ne propose que des cours à consulter sans pouvoir y amener des modifications; autrement dit, pas de back-end. Mais des exercices, des quiz et des applications interactives sont en cours de développement pour rendre le site dynamique, ainsi que des applications pour calculer les contraintes de surcharges et les facteurs de sécurité sont aussi en cours de développement.
+
+`` javascript
+	var ait = {};
+	ait.push = "My name is ait abdelmalek"; 
+``
