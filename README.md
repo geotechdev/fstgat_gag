@@ -3,9 +3,9 @@
 
 <a href="https://geotechdev.github.io/fstgat_gag/" target="_blank">Vous pouvez visiter le site FSTGAT_GAG en cliquant ici</a>
 
-Ce sit est dit plateforme car c'est un projet ambitieux pour créer une vraie plateforme qui sera destinée essentiellement aux étudiants mais qui laisse les portes d'une évolution vers le monde de l'application ouverte.
+Ce site est dit plateforme car c'est un projet ambitieux pour créer une vraie plateforme qui sera destinée essentiellement aux étudiants mais qui laisse les portes d'une évolution vers le monde de l'application ouverte.
 
-Ce n'est actuellement disponible qu'en fr.
+Ce n'est actuellement disponible qu'en ``fr``.
 
 Ce site contient et suit essentiellement le curriculum de la première année master géotechnique, mais un programme plus profond et enrichi est envisagé. Les cours actuellement disponibles sont:
 
