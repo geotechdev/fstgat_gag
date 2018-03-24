@@ -1,13 +1,12 @@
 # FSTGAT_GAT
 ### Une nouvelle plateforme pour les étudiants de la géotechnique
 
-[ Vous pouvez visiter le site FSTGAT_GAT en cliquant ici ] [ https://geotechdev.github.io/fstgat_gag/ ]
 
-<a href="https://geotechdev.github.io/fstgat_gag/">Vous pouvez visiter le site FSTGAT en cliquant ici</a>
+<a href="https://geotechdev.github.io/fstgat_gag/" target="_blank">Vous pouvez visiter le site FSTGAT en cliquant ici</a>
 
-Ce sit est dit plateforme car c'est un projet ambitieux pour créer une vraie plateforme qui sera destinée essentiellement aux étudiants mais qui laisse les portes d'une évolution vers le monde de l'application ouverte.
+Ce site est dit plateforme car c'est un projet ambitieux pour créer une vraie plateforme qui sera destinée essentiellement aux étudiants mais qui laisse les portes d'une évolution vers le monde de l'application ouverte.
 
-Ce n'est actuellement disponible qu'en fr.
+Ce n'est actuellement disponible qu'en ``fr``.
 
 Ce site contient et suit essentiellement le curriculum de la première année master géotechnique, mais un programme plus profond et enrichi est envisagé. Les cours actuellement disponibles sont:
 
