@@ -122,6 +122,7 @@
 										<li><em>Nappe captive (ou artésienne) :</em> si le niveau de la nappe s'établit plus haut de la limite supérieure de la couche perméable. La pression de l'eau à la surface de la nappe n'est pas nulle (positive).</li>
 									</ul>
 									<p>Notons qu'en réalité, la nappe phéatique est le lieu où se déroule la majorité des écoulement. Il est rare de ne rencontrer qu'une seule nappe. La plupart du temps, il y a une superposition de plusieurs niveaux d'eau.</p>
+									<p>
 								</div>
 							</div>
 						</div>
@@ -137,6 +138,15 @@
                                     <p>La dimension des pores dans les sols étant variable, l'écoulement ne peut être défini que par des caractéristiques moyennes. L'écoulement de l'eau a un cheminement tortueux qu'on simplifie en prenant une trajectoire moyenne appelée ligne de courant.</p>
                                     <p>La ligne de courant est la ligne idéale qui représente la trajectoire théorique d'une particule d'eau en mouvement dans un aquifère.</p>
                                     <p>Si on désigne par <code>S</code>, la surface normale aux lignes de courant traversée par une certaine quantité d'eau, le débit d'eau <code>q</code> qui s'écoule à travers cette surface est le volume d'eau <code>V</code> qui la traverse pendant une unité de temps <code>t</code> : alors <code>q = V/t</code>. Le débit s'exprime en [m<sup>3</sup>/sec].</p>
+                                    <h3>Vitesse d l'eau dans le sol</h3>
+                                    <p>L'eau s'écoule dans un sol et circule dans les interstices entre les grains qui forment des canaux de tailles variables. Les trajectoires réelles des filets liquides sont assez tortueuses et il n'est pas possible de définir les vitesses réelles de l'eau.</p>
+                                    <p>Comme on s'intéresse au mouvement global du fluide on définit des rajectoires fictives et de vitesses moyennes <code>V<sub>moy</sub></code>.</p>
+                                    <p>Soit <code>q</code> le débit de l'eau s'écoulant dans un tube de sol au travers d'une surface d'aire totale <code>S = S<sub>grains</sub> + S<sub>vides</sub></code>. On définit deux vitesses :</p>
+                                    <ul>
+                                    	<li><strong>Vitesse apparente <code>v</code></strong> : la vitesse de décharge de l'eau dans le sol, notée <code>v</code>, est égale au rapport débit <code>q</code> sur la section <code>S</code> : soit <code>v = q/S</code>.<br>En pratique, cette vitesse apparente fictive, vitesse de décharge (appelée aussi vitesse de percolation) qui est utilisée dans les calculs de débits.</li>
+                                    	<li><strong>Vitesse réelle <code>v<sub>r</sub></code></strong> : l'eau ne circule que dans les vides, on peut alors définir la vitesse moyenne réelle (vraie) notée <code>v<sub>r</sub> = v/n</code> ; avec <code>n</code> étant la porosité.</li>
+                                    </ul>
+                                    <p>Notons que la vitesse réelle est évidemment supérieure à la vitesse moyenne apparente (<code>v<sub>r</sub></code> &gt; <code>v</code>). Aussi la vitesse s'exprime en [m/s], elle est normale (perpendiculaire) à la surface S.</p>
 								</div>
 							</div>
 						</div>
@@ -145,7 +155,46 @@
 								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen"> 4. Mouvement permanent de l'eau </a></h4>
 							</div>
 							<div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
-								<div class="panel-body">Paragraphe quatre</div>
+								<div class="panel-body">
+									<h3>Charge hydraulique et équation de Bernoulli</h3>
+									<ol>
+										<li>
+											<h4>Charge hydraulique</h4>
+											<p>Dans le cas de l'écoulement d'un <em>fluide parfait</em> (<em>incompressible et visqueux</em>) le théorème de Bernoulli indique que le long d'un filet fluide, la charge est constante.</p>
+											<p>L'eau n'étant pas un fluide parfait, la présence des particules solides génère des contraintes de <em>cisaillement</em> (liées au <em>gradient de vitesse</em>). Il y a <em>interaction</em> de l'eau avec les grains du sol et, en conséquence de la <em>dissipation d'énergie</em> et ainsi le théorème de Bernoulli ne s'applique pas. Il y a <em>perte de charge</em> le long d'un filet fluide.</p>
+											<p>La charge hydraulique est une valeur relative fonction de la position du plan référence. Elle est donc définie à une constante près. Cela ne pose pas de problème car c'est la variation de charge entre deux points qui est le paramètre fondamental.</p>
+											<p>Dans l'étude de l'écoulement d'un fluide sous l'action de pesanteur, on appelle charge hydraulique en un point M :</p>
+											<p class="text-center"><code>h<sub>M</sub> = (v<sub>M</sub><sup>2</sup>/2g) + (u<sub>M</sub>/&gamma;<sub>w</sub>) + z<sub>M</sub></code></p>
+											<p>Avec :</p>
+											<ul class="list-unstyled">
+												<li><code>v<sub>M</sub></code> : vitesse de l'eau au point M ;</li>
+												<li><code>u<sub>M</sub></code> : pression de l'eau en M (en prenant pour origine des pressions la pression atmosphérique) appelée pression interstitielle ;</li>
+												<li><code>z<sub>M</sub></code> : altitude (cote) du point M par rapport à un plan de référence arbitraire, elle est comptée positivement vers le haut en [m] ;</li>
+												<li><code>&gamma;<sub>w</sub></code> : est le poids volumique de l'eau en [kN/m<sup>3</sup>] ;</li>
+												<li><code>g</code> : accélération de la pesanteur [m/s<sup>2</sup>].</li>
+											</ul>
+											<p>La charge hydraulique représente l'énergie totale (énergie mécanique) d'une particule fluide de masse unité <code>E<sub>M</sub> = E<sub>c</sub> + E<sub>p</sub></code>.</p>
+											<p>Avec :</p>
+											<ul class="list-unstyled">
+												<li><code>E<sub>c</sub> = v<sub>M</sub><sup>2</sup>/2g</code> : correspond à l'énergie cinétique exprimé en [m] ;</li>
+												<li><code>E<sub>p</sub> = u<sub>M</sub>/&gamma;<sub>w</sub></code> : correspond à l'énergie potentielle exprimée en [m].</li>
+											</ul>
+											<blockquote>
+												<p>L'équation de Bernoulli est valable uniquement pour un <em>liquide parfait</em>, dont les particules de fluide ont toujours la même trajectoire, dans un milieu saturé en régime permanent.</p>
+												<p>En mécanique des ols, le terme <code>v<sub>M</sub><sup>2</sup>/2g</code> est toujours très faible par rapport aux autres termes car la vitesse d'écoulement de l'eau est toujours faible. Pour une vitesse de 10 cm/s, (qui n'est jamais atteinte en pratique!) <code>v<sub>M</sub><sup>2</sup>/2g = 0.5 mm</code>. On peut donc le négliger et écrire la charge hydraulique comme :</p>
+												<p class="text-center"><code>h<sub>M</sub> = (u<sub>M</sub>/&gamma;<sub>w</sub>) + z<sub>M</sub></code></p>
+											</blockquote>
+											<p><code>h<sub>M</sub></code> est le potentiel au point M. C'est l'énergie par unité de poids en [m]. Le potentiel est défini par rapport à un niveau de référence et donc à une constante près. Mais cela n'a plus d'importance si on s'intéresse à <code>&Delta;h</code>, la différence de potentiel.</p>
+										</li>
+										<li>
+											<h4>Pression interstitielle</h4>
+											<p>La pression interstitielle <code>u</code> est mesurée par la hauteur d'eau dans un tube piézométrique (appelé aussi piézomètre) pénétrant dans le sol jusqu'au point considéré. Elle est proportionnelle à la hauteur d'eau dans le tube piézométrique. On appelle surface piézométrique le lieu des points correspondant au niveau de l'eau dans les tubes piézométriques.</p>
+											<p>Cette pression est uniforme dans toutes les directions (isotrope) mais elle change d'un point à l'autre.</p>
+										</li>
+									</ol>
+									<h3>Perte de charge</h3>
+									<h3>Gradient hydraulique</h3>
+								</div>
 							</div>
 						</div>
 						<div class="panel panel-default">
