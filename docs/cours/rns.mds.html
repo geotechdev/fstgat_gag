@@ -213,6 +213,95 @@
 							<div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
 								<div class="panel-body">
 									<p>L'eau s'écoule dans un sol et circule dans les interstices entre les grains qui forment des canaux de taille variable. Les trajectoires réelles des filets liquides sous un angle microscopique sont assez tortueuses, il n'est pas possible de définir les vitesses de chaque goutte d'eau et c'est pourquoi pour définir le mouvement global du fluide, on se permet de définir des trajctoires au niveau macroscopique et des vitesses moyennes.</p>
+                                    <p>Les expériences de Darcy, qui sont à la base de l'hydraulique souterraine étaient relatives à l'écoulement de l'eau dans une conduite verticale remplie de sable en régime permanent. Dans un tel cas, les lignes de courant sont rectlignes et parallèles.</p>
+                                    <p>La loi, établie expérimentalement, peut être étendue au cas d'un écoulement monodimensionnel de direction quelconque. La loi de Darcy exprime que la vitesse de décharge est proportionnelle au gradient hydraulique :</p>
+                                    <p class="text-center"><code>v = k.i</code></p>
+                                    <ul class="list-unstyled">
+                                    	<li><code>v</code> : vitesse de Darcy en [m/s] ;</li>
+                                    	<li><code>i</code> : gradient hydraulique, sans dimension ;</li>
+                                    	<li><code>k</code> : coefficient de perméabilité en [m/s].</li>
+                                    </ul>
+                                    <p>La circulation de l'eau s'effectue en régime laminaire. Le coefficient <code>k</code> ainsi introduit est une caractéristique du sol étudié. Il est appelé coefficient de perméabilité. Sa dimension est celle d'une vitesse puisque <code>i</code> est sans dimension.</p>
+                                    <p><em>Remarques</em></p>
+                                    <dl>
+                                    	<dt>Pour avoir un ordre de grandeur facile à retenir ; la valeur de 10<sup>-8</sup>m/s représente une vitesse de 30cm/an environ.</dt>
+                                    	<dt>Les roches non fissurées ont des perméabilités variant de 10<sup>-12</sup> à 10<sup>-12</sup> m/s.</dt>
+                                    	<dt>Dans le cas d'un sable à granulométrie serrée (C<sub>u</sub>&lt;2), on peut obtenir une estimation du coefficient de perméabilité à l'aide de la relation empirique de Hazen k = D<sub>10</sub><sup>2</sup>, où k est exprimée en m/s et D<sub>10</sub> est exprimée en cm.</dt>
+                                    	<dt>Le coefficient k peut être également défini comme la vitesse de percolation sous gradient hydraulique constant.</dt>
+                                    </dl>
+                                    <h3>Domaine de validité de la loi de Darcy</h3>
+                                    <p>La loi de Darcy est très utilisée : c'est la loi linéaire à un seul paramètre. Cependant, elle présente des limites :</p>
+                                    <ul>
+                                    	<li>d'un part, à grande vitesse, on observe une perte de la linéarité car l'écoulement devient turbulent ;</li>
+                                    	<li>d'autre part, dans le domaine des faibles vitesses, on observe qu'il faut un gradient d'initiation pour atteindre le domaine de Darcy</li>
+                                    </ul>
+                                    <a href="../img/darcy_limit.svg" target="_blank"><img src="../img/darcy_limit.svg" style="max-width: 200px;" alt="Les limites de la loi de Darcy"></a>
+                                    <h3>Ecoulement vertical</h3>
+                                    <p>On a un écoulement vertical à travers un multicouche. On détermine le coefficient de perméabilité vertical équivalement <code>k<sub>ev</sub></code> pour une couche de sol égale à la somme de toutes les couches.</p>
+                                    <p>On écrit la continuité de l'écoulement. Le débit est constant à travers chaque interface, (<code>q<sub>1</sub> = q<sub>2</sub> = q<sub>3</sub> = q<sub>i</sub></code>) donc les vitesses sont égales dans chacune des couches. D'autre part, la perte de charge totale est égale à la somme des pertes de charge dans chaque couche (<code>&Delta;h = &Delta;h<sub>1</sub> + &Delta;h<sub>1</sub> + &Delta;h<sub>2</sub> + &Delta;h<sub>3</sub> + ... + &Delta;h<sub>i</sub></code>).</p>
+                                    <p>On peut donc écrire, en appliquant la loi de Darcy : (<code>H = h<sub>1</sub> + h<sub>2</sub> + h<sub>3</sub> + ... + h<sub>i</sub> + ... + h<sub>n</sub></code>) :</p>
+                                    <dir class="well text-center">
+                                    	<ul class="list-unstyled">
+                                    		<li><code>v = k<sub>1</sub>.&Delta;h<sub>1</sub>/h<sub>1</sub> = k<sub>i</sub>.&Delta;h<sub>i</sub>/h<sub>i</sub></code></li>
+                                    		<li><code>&Delta;h = v.&Sigma;h<sub>i</sub>/k<sub>i</sub> = v.H/k<sub>v</sub></code></li>
+                                    		<li><code>k<sub>ev</sub> = H / (&Sigma;h<sub>i</sub>/k<sub>i</sub>)</code></li>
+                                    	</ul>
+                                    </dir>
+                                    <p>L'écoulement vertical à travers le multicouche est équivalent à un écoulement vertical dans un massif homogène de coefficient équivalement <code>k<sub>ev</sub></code>. Les variations des charges <code>h<sub>i</sub></code> à l'intérieur de chaque couche sont linéaires.</p>
+                                    <p>Les pertes de charge sont concentrées dans les couches les plus imperméables, pour des multicouches d'épaisseur à peu près égales.</p>
+                                    <p>Le coefficient de perméabilité dans le sens perpendiculaire à la stratification est égale la moyenne harmonique, pondéeée par les épaisseurs, des coefficients de perméabilité de chaque couche.</p>
+                                    <h3>Ecoulement horizontal</h3>
+                                    <p>On a un écoulement horizontal à travers un multicouche. On détermine le coefficient de perméabilité horizontal équivalent <code>k<sub>eh</sub></code> pour une couche de sol égale à la somme de toutes les couches :</p>
+                                    <dir class="well">
+                                    	
+                                    </dir>
+                                    <p>L'écoulement horizontal à travers le multicouche est équivalent à un écoulement horizontal dans un massif homogène de coefficient équivalent <code>k<sub>eh</sub></code>. On a toujours <code>k<sub>eh</sub>&gt;k<sub>ev</sub></code>.</p>
+                                    <p>On définit, également un coefficient &alpha; tel que <code>&alpha; = (k<sub>eh</sub>/k<sub>ev</sub>)<sup>1/2</sup></code>.<br>Pour un milieu isotrope, on peut définir un, dans le système ficxx un coefficient de perméabilité équivalent <code>k<sub>e0</sub></code> qui vaut : <code>k<sub>e0</sub> = (k<sub>eh</sub>.k<sub>ev</sub>)<sup>1/2</sup></code>.<br>Le tenseur de perméabilité <code>k</code> est indépedant de x, y, et z (homogène), symétrique et diagonalisable. La loi de Darcy généralisée <code>v = k.i = -k.grad h</code> : </p>
+                                    <div class="well">
+                                    	<code>
+                                    		<table class="table">
+                                    			<tr>
+                                    				<td rowspan="3">(k) =</td>
+                                    				<td>k<sub>x</sub></td>
+                                    				<td>k<sub>xy</sub></td>
+                                    				<td>k<sub>xz</sub></td>
+                                    			</tr>
+                                    			<tr>
+                                    				<td>k<sub>yx</sub></td>
+                                    				<td>k<sub>y</sub></td>
+                                    				<td>k<sub>yz</sub></td>
+                                    			</tr>
+                                    			<tr>
+                                    				<td>k<sub>zx</sub></td>
+                                    				<td>k<sub>yy</sub></td>
+                                    				<td>k<sub>z</sub></td>
+                                    			</tr>
+                                    		</table>
+                                    	</code>
+                                    </div>
+                                    <p>Si les axes de cooerdonnées utilisés sont les directions principales du teneur de perméabilité k, il est ramené à sa forme diagonale et s'écrit :</p>
+                                    <div class="well">
+                                    	<code>
+                                    		<table class="table">
+                                    			<tr>
+                                    				<td rowspan="3">(k) =</td>
+                                    				<td>k<sub>x</sub></td>
+                                    				<td>0</td>
+                                    				<td>0</td>
+                                    			</tr>
+                                    			<tr>
+                                    				<td>0</td>
+                                    				<td>k<sub>y</sub></td>
+                                    				<td>0</td>
+                                    			</tr>
+                                    			<tr>
+                                    				<td>0</td>
+                                    				<td>0</td>
+                                    				<td>k<sub>z</sub></td>
+                                    			</tr>
+                                    		</table>
+                                    	</code>
+                                    </div>
 								</div>
 							</div>
 						</div>
