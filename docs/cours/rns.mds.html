@@ -156,7 +156,8 @@
                                     <li><strong>Vitesse réelle <code>v<sub>r</sub></code></strong> : l'eau ne circule que dans les vides, on peut alors définir la vitesse moyenne réelle (vraie) notée <code>v<sub>r</sub> = v/n</code> ; avec <code>n</code>                                        étant la porosité.</li>
                                 </ul>
                                 <p>Notons que la vitesse réelle est évidemment supérieure à la vitesse moyenne apparente (<code>v<sub>r</sub></code> &gt; <code>v</code>). Aussi la vitesse s'exprime en [m/s], elle est normale (perpendiculaire) à la surface
-                                    S.</p>
+                                    S.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -609,8 +610,7 @@
                                     l’eau interstitielle et les grains solides sont incompressibles.</p>
                                 <div class="well text-center">
                                     <p>Position initiale <code>t<sub>0</sub> (σ = u ; ΔH = 0)</code> ; <br>position au temps <code>t<sub>i</sub> (σ = σ<sup>'</sup> + u ; ΔH = ΔH<sub>i</sub>)</code> ; <br>position au temps <code>t<sub>f</sub> (σ = σ<sup>'</sup> ; ΔH = ΔH<sub>f</sub>)</code>
-                                        <em
-                                            class="pull-right">1</em>
+                                        <em class="pull-right">1</em>
                                     </p>
                                     <p><code>U [%] = (u<sub>0</sub> - ΔU)/u<sub>0</sub></code><em class="pull-right">2</em></p>
                                     <p><code>U [%] = ΔH/ΔH<sub>f</sub></code><em class="pull-right">3</em></p>
@@ -880,29 +880,39 @@
                                         <th rowspan="5" style="width: 10%;"><br><br><br>Massif semi-infini</th>
                                         <td rowspan="2" style="width: 15%;">Fondation rectangulaire <br>(<code>H &gt; L + 2B</code>)</td>
                                         <td style="width: 20%;">Semelle flexible <br>(<code>&Delta;H<sub>iC</sub> = 2*&Delta;H<sub>iB</sub></code>)</td>
-                                        <td style="width: 55%;">xxx</td>
+                                        <td style="width: 55%;"><code>&Delta;H<sub>iC</sub> = B.q.I.2(1 - <em>&nu;</em><sup>2</sup>)/E</code> ;<br />
+                                            <code>I = <em>f</em>(&alpha;)</code> avec <code>&alpha; = L / B</code> ;<br /> ou <code>I<sub>flexible</sub> = (1/&pi;)[ln(&alpha;+(1+&alpha;<sup>2</sup>)<sup>1/2</sup>) + &alpha;.ln(1 + (1+&alpha;<sup>2</sup>)<sup>1/2</sup>)/&alpha;]</code>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Semelle rigide <br>(<code>&Delta;H<sub>iC</sub> = &Delta;H<sub>iB</sub></code>)</td>
-                                        <td>xxx</td>
+                                        <td><code>&Delta;H<sub>i</sub> = B.q.I.2(1 - <em>&nu;</em><sup>2</sup>)/E</code> ; <br />
+                                            <code>I<sub>rigide</sub> = I<sub>flexible</sub> + (1/&pi;)[(1 + &alpha;<sup>3</sup> + (&alpha;<sup>2</sup> + 1)<sup>3/2</sup>)/3.&alpha;]</code>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td rowspan="3">Fondation circulaire <br>(<code>H &gt; 6R</code>)</td>
                                         <td rowspan="2">Semelle flexible <br>(<code>&Delta;H<sub>iC</sub> = 2*&Delta;H<sub>iB</sub></code>)</td>
-                                        <td>xxx</td>
+                                        <td>Au centre (r = 0)<br />
+                                            <code>&Delta;H<sub>iC</sub>(z) = R.q.I.2(1 - <em>&nu;</em><sup>2</sup>)/E</code> ;<br />
+                                            <code>I = <em>f</em>(&alpha;)</code> avec <code>&alpha; = z / R</code> ;<br /> ou <code>I = [(1+&alpha;<sup>2</sup>)<sup>1/2</sup> - &alpha;].[1 + (&alpha; / (2.(1-&alpha;)(1+&alpha;<sup>2</sup>)<sup>1/2</sup>))]</code>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>xxx</td>
+                                        <td>En surface (z = 0)<br />
+                                            <code>z = 0</code> --> <code>&alpha; = 0</code> --> <code>I = 1</code> --> <code>&Delta;H<sub>iC</sub>(0) = R.q.2(1 - <em>&nu;</em><sup>2</sup>)/E</code>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Semelle rigide <br>(<code>&Delta;H<sub>iC</sub> = &Delta;H<sub>iB</sub></code>)</td>
-                                        <td>xxx</td>
+                                        <td><code>&Delta;H<sub>i</sub> = (R.q.&pi;/2).(1 - <em>&nu;</em><sup>2</sup>)/E</code></td>
                                     </tr>
                                     <tr>
                                         <th rowspan="2" style="width: 10%;">Massif fini</th>
                                         <td rowspan="2" style="width: 15%;">Fondation rectangulaire <br>(<code>H &gt; L + 2B</code>)</td>
                                         <td style="width: 20%;">Semelle flexible <br>(<code>&Delta;H<sub>iC</sub> = 2*&Delta;H<sub>iB</sub></code>)</td>
-                                        <td style="width: 55%;">xxx</td>
+                                        <td style="width: 55%;"><code>&Delta;H<sub>i</sub> = (2.q.B/E).&ro;<sub>H</sub></code> ;<br /> avec <code>&ro;<sub>H</sub> = <em>f</em>(<em>&nu;</em>, &alpha; : L/B, &beta; : 2H/B)</code> --> Tableux
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td style="width: 20%;">Semelle rigide <br>(<code>&Delta;H<sub>iC</sub> = &Delta;H<sub>iB</sub></code>)</td>
