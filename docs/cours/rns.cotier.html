@@ -1,286 +1,519 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no viewport-fit=cover">
-		<!-- Name of web application (only should be used if the website is used as an app)-->
-		<meta name="application-name" content="FSTGAT_GAG">
-		<!-- Theme Color for Chrome, Firefox OS and Opera -->
-		<meta name="theme-color" content="rgb(33,33,33)">
-		<!-- Add to home screen -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
-		<!-- Disable translation prompt -->
-		<meta name="google" content="notranslate">
-		<!-- Force IE 8/9/10 to use its latest rendering engine -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Etude du génie côtier - FSTGAT_GAG</title>
-		<link rel="icon" type="image/png" href="../img/logo_home.png">
-		<meta name="description" content="Cours de la nouvelle plateforme pour les étudiants en Géologie Appliquée - Géotechnique">
-		<link rel="stylesheet" type="text/css" href="rns.basic.css">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	    <!--[if lt IE 9]>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no viewport-fit=cover">
+    <!-- Name of web application (only should be used if the website is used as an app)-->
+    <meta name="application-name" content="FSTGAT_GAG">
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="rgb(33,33,33)">
+    <!-- Add to home screen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+    <!-- Disable translation prompt -->
+    <meta name="google" content="notranslate">
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Etude du génie côtier - FSTGAT_GAG</title>
+    <link rel="icon" type="image/png" href="../img/logo_home.png">
+    <meta name="description" content="Cours de la nouvelle plateforme pour les étudiants en Géologie Appliquée - Géotechnique">
+    <link rel="stylesheet" type="text/css" href="rns.basic.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-		<!-- bootstrap cdn 3.3.7 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- js effect scroll-->
-		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-		<!--google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Mina|Roboto+Condensed|PT+Sans+Narrow" rel="stylesheet">
-		<!-- font awesome for icons in bootstrap -->
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    </head>
+    <!-- bootstrap cdn 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- js effect scroll-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Mina|Roboto+Condensed|PT+Sans+Narrow" rel="stylesheet">
+    <!-- font awesome for icons in bootstrap -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-		<div class="container-fluid">
-			<header class="row">
-				<nav class="navbar navbar-default">
-				  <div class="container-fluid">
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					  <a class="navbar-brand" href="#">FSTGAT_GAG</a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-					  <ul class="nav navbar-nav">
-						<li><a href="../../index.html"><i class="fas fa-university"></i> Accueil</a></li>
-						<li class="active"><a href="#"><i class="fas fa-book"></i> Cours</a></li>
-						<li><a href="../rns.3.exercices.html"><i class="fas fa-graduation-cap"></i> Exercices</a></li>
-						<li><a href="../rns.4.a_propos.html"><i class="fas fa-info-circle"></i> A Propos</a></li>
-					  </ul>
-					</div>
-				  </div>
-				</nav>
-			</header>
-			<div class="row">
-				<div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-					<ol class="breadcrumb">
-						<li><a href="../../index.html">Accueil</a></li>
-						<li><a href="../rns.2.cours.html">Cours</a></li>
-						<li class="active">Génie Côtier</li>
-					</ol>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-9 col-xs-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3>Cours: l'étude génie côtier</h3>
-							<h4>Pour les étudiants M1 en géotechnique</h4>
-							<h5>Sommaire du cours</h5>
-						</div>
-						<div class="panel-body">
-							<div class="list-group">
-								<a href="#ch1" class="list-group-item"><em>Chapitre 1: </em>Organigramme d'une étude maritime</a>
-								<a href="#ch2" class="list-group-item"><em>Chapitre 2: </em>Protection et/ou stabilisation du littoral</a>
-								<a href="#ch3" class="list-group-item"><em>Chapitre 3: </em>Ouvrages pour protéger/stabiliser le littoral</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch1">
-					<h2>Chapitre 1: Organigramme d'une étude maritime</h2>
-				</div>
-				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> L'organigramme : </a></h4>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-								<div class="panel-body">
-									<ol>
-										<li>Recueil des données existantes</li>
-										<li>Synthèse des phénomènes naturels et analyse sédimentologique</li>
-										<li>Etude sur plan</li>
-										<li>Etude sur modèle réduit physique et mathématique</li>
-										<li>Elaboration du projet (Réalisation et contrôle des prévisions).</li>
-										<li>Etude sur model physique des phases de construction.</li>
-									</ol>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch2">
-					<h2>Chapitre 2: Protection et/ou stabilisation du littoral</h2>
-					<p>Le littoral, étant en équilibre précaire, n'offre nulle garantie de stabilité ; Deux phénomènes peuvent influencer cet équilibre et déstabiliser le littoral :</p>
-					<ul>
-						<li>Erosion : on parle alors de régression du littoral ou le recul du littoral non compensé par l’engraissement locale dus à la disparition des végétaux stabilisant, vase, dune, arrière plage ou la diminution d’apport terrigène. Exemple d’érosion : littoral du Sidi Fredj.</li>
-						<li>Engraissement : on parle alors d’hyper-sédimentation du littoral dû à l’ensablement ou envasement du littorale (matériaux amené par le courant du large vers la cote). Exemple d’engraissement : l’élargissement de la plage au port de Skikda selon sa longueur.</li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingFive">
-								<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive"> 1. Régime sédimentologique </a></h4>
-							</div>
-							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-								<div class="panel-body">
-									<p>Le régime sédimentologique du littoral consiste à définir les différents vecteurs de déplacement des matériaux sédimentaires le long du littoral et dépend de 3 facteurs :</p>
-									<ul>
-										<li><em>Sédimentation disponible</em> : origine, nature et quantité des sédiments.</li>
-										<li><em>Facteurs hydrodynamiques</em> :
-											<ul>
-												<li><strong>Vent :</strong> Mouvement de l'air se déplaçant d'une zone de hautes pressions vers une zone de basses pressions.</li>
-												<li><strong>Marée :</strong> variation du niveau de la mer due à l'action gravitationnelle de la Lune et du Soleil (50cm entre base et haute). La marée atlasique 10m. Le <em>marnage</em> : est le dénivelé entre les niveaux d'une marée haute et d'une marée basse successive.</li>
-												<li><strong>Houle :</strong> train de vagues régulier, de longue période, non pas généré par le vent local mais formé et ordonné par un vent soufflant sur une grande étendue de mer sans obstacles.<br>(Vague : mouvement ondulatoire sous effet du vent, celle-ci se casse lorsque la pente arrive à 120° et c’est là que l’on a le max d’énergie H=1/3).<br>On peut voir dans ce schéma les composantes de la houle. Comme la longueur d’onde λ ou L, la hauteur de la houle et sa profondeur. A partir de la profondeur de l’ordre de 30 m, les trains de vagues se modifient et créent une zone de déferlement* qui cause une remise en suspension des particules sableuses.<br><a href="../img/houle.png" target="_blank"><img src="../img/houle.png" class="img-responsive img-thumbnail" alt="Schéma de la houle"></a></li>
-												<li><strong>Courant :</strong> mouvement de mer régulier, continue et cyclique dus à la combinaison de plusieurs effets comme la température, la densité, la salinité, le vent etc. Des différents courants côtiers il y a :
-													<ul>
-														<li><strong>Courants de dérive littoral</strong>, dont la condition pour l’apparition est lorsque les traines d’onde de la houle forme une incidence (angle) avec le littoral, plus l’angle d’incidence sera fort et plus le courant sera important.<br>
-															<a href="../img/courant_derive.png" target="_blank"><img src="../img/courant_derive.png" class="img-thumbnail img-responsive" alt="Schéma du courant de dérive littoral"></a>
-														</li>
-														<li><strong>Courants de retour</strong>, dont la condition d’apparition est lorsque les traines d’ondes abordent la côte parallèlement.<br>
-															<a href="../img/courant_retour.png" target="_blank"><img src="../img/courant_retour.png" class="img-responsive img-thumbnail" alt="Schéma du courant de retour"></a>
-														</li>
-														<li><strong>Courants d’extension/compensation</strong>, c’est un courant qui apparait lors du passage d’une zone de forte énergie vers une zone de basse énergie.</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li><em>Facteurs généraux</em> (Géologie et hydrographie*).</li>
-									</ul>
-									<p>
-										<small>* Le déferlement des vagues est la déformation rapide du profil de l'onde, associé à la production de turbulence.</small><br>
-										<small>* Hydrographie : partie de la géographie physique qui traite des eaux marines ou douces. Ensemble des eaux courantes ou stables d'un pays. Topographie maritime qui a pour objet de lever le plan du fond des mers et des fleuves.</small>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingTwo">
-								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 2. Estimation du transit des sédiments </a></h4>
-							</div>
-							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								<div class="panel-body">
-									<p>La houle est le principal agent responsable du transport des sables le long d’un littoral. Le déplacement des sédiments s’effectue de façons multiples suivant les caractéristiques des matériaux, à la profondeur à laquelle ils se trouvent et les conditions océanographiques.</p>
-									<p>Dans le <em>cas des sables fins</em>, le transport s’effectue soit en suspension sous l’action de fortes houles et il constitue 75% des transport ; par contre pour les sables grossiers, leur déplacement se fait par jet de rive, ces sables grossiers se localisent essentiellement à l’interface entre plage aérienne et plage sous-marine (déplacement en dents-de-scies).</p>
-									<p>Connaissant le pourcentage des différentes houles qui règnent dans une année, il est possible de faire un bilan annuel des possibilités des mise-en-mouvement des sédiments. Il existe plusieurs méthodes d’estimation du transit, dont la méthode du LCHF :</p>
-									<p class="text-center"><code>Q = &Sigma; K / (g.C.H<sup>2</sup>.T.t.<em>f</em>(&alpha;))</code></p>
-									<ul class="list-unstyled">
-										<li><code>Q</code> : quantité des sédiments déplacés [m<sup>3</sup>/an] ;</li>
-										<li><code>K</code> : coefficient qui est fonction de la taille des sables (sable fin : K= 2,5.10<sup>-6</sup>) ;</li>
-										<li><code>C</code> : cambrure de la houle C = H/&lambda; avec H : hauteur de la houle et &lambda; : longueur d'onde de la houle ;</li>
-										<li><code>g</code> : accélération de la pesanteur ;</li>
-										<li><code>H</code> : hauteur significatif de la houle [m] ;</li>
-										<li><code>T</code> : période de la houle ;</li>
-										<li><code>t</code> : temps =365.24.F/100 , avec F : fréquence d’apparition de houle ;</li>
-										<li><code><em>f</em>(&alpha;)</code> : fonction de l’obliquité de la houle à -15m de profondeur.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingThree">
-								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 3. Caractérisation prépondérantes du régime sédimentologique </a></h4>
-							</div>
-							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-								<div class="panel-body">
-									<ol>
-										<li>Mouvements longitudinaux dans le profil : cas des courants de dérive littoral, caractérisé par un déplacement parallèle des particules par rapport à la cote, son orthogonal fait un angle de 30° à 70°.</li>
-										<li>Mouvements transversaux ou transit littoral : cas des courants de retour, caractérisé par un déplacement perpendiculaire des particules par rapport à la cote (déplacement de la cote vers le large), son orthogonale fait un angle de 90° ; il y’a changement de morphologie en un courant orbitale.</li>
-										<p>NB : On parle de ‘courant d’expansion ou de compensation’ quand le courant est créé à l’abri d’un ouvrage (il y’a donc absorption d’énergie c.à.d. passage d’une zone de haute énergie a une zone de faible énergie).</p>
-										<li>Mouvement Transversaux + Longitudinaux (courant de retour et dérive littoral)</li>
-										<li>Matériaux disponible (Apport naturels suffisant ? oui ou non)</li>
-									</ol>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingFour">
-								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree"> 4. Ouvrages pour protéger/stabiliser le littoral </a></h4>
-							</div>
-							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-								<div class="panel-body">
-									<p>Pour bloquer le déplacement des particules, on crée des ouvrages en fonction des contraintes hydrodynamique. Nous avons :</p>
-									<ul>
-										<li><em>Ouvrages longitudinaux</em> (parallèle au rivage) : contre les mouvements transversaux ou ‘courants de retour’ comme : les hauts de plages (pierres, murs, digues) et les brise lames.</li>
-										<li><em>Ouvrages Transversaux</em> (Perpendiculaire au rivage) : contre les mouvements longitudinaux ou ‘courants de dérive littoral’ comme les épis.</li>
-										<li><em>Ouvrages transversaux et longitudinaux.</em></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch3">
-					<h2>Chapitre 3: Ouvrages pour protéger/stabiliser le littoral</h2>
-				</div>
-				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingSix">
-								<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix"> 1. Haut de plages </a></h4>
-							</div>
-							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-								<div class="panel-body">
-									<p>C’est la partie de la plage située entre le pied de dune ou de falaise et la limite des hautes mers de marées moyennes. C’est un mur, des digues ou des pierres d’une hauteur H qui correspond à la hauteur max de la houle annuel.</p>
-									<p>Pour s’attaquer à l’action frontale de la houle et éviter des dégradations importantes de la côte (‘l’effet Renard’ ou ‘l’affouillement’) ; les hauts de plage sont fréquemment protégés par des ouvrages longitudinaux. Ce type d’ouvrage se retrouve devant des zones urbaines, des zones industrielles et des routes de front-de-mer.</p>
-									<p>La cause de la dégradation des parties hautes de la plage est la réflexion de la houle (changements de directions). Cette réflexion est observée si la cambrure de la houle est inférieure à une certaine valeur de la pente du talus.</p>
-									<p>Cambrure C = (H hauteur de la houle/L longueur d’onde) &le; 2&alpha;/&pi;sin<sup>2</sup>(&alpha;/&pi;).</p>
-									<p>Pour être acceptable, l’ouvrage longitudinal de haut de plage doit répondre aux impératives suivantes :</p>
-									<ul>
-										<li>L’ouvrage doit être très peu réfléchissant, ce qui conduit à des ouvrages à faible pente, il faut qu’il soit le plus possible absorbant ;</li>
-										<li>Ils ne doivent pas présenter d’affouillement à leur niveau le plus bas ;</li>
-										<li>Les ouvrages de haute plage ne doivent être submersible par la vague.</li>
-									</ul>
-									<p>Pour calculer la côte (hauteur de l’ouvrage), on devra tenir de la hauteur théorique d’ascension de la houle sur le talus.</p>
-									<p>(Exemple : pour un ouvrage absorbant constitué d’enrochement, on admettra que la côte supérieure de l’ouvrage doit être égale à <strong>h = 1.25H<sub>1/10</sub></strong>. H<sub>1/10</sub> =1.95H<sub>m</sub>. H<sub>m</sub> : hauteur moyenne arithmétique).</p>
-									<p>D’une façon générale, l’ascension de la houle sera d’autant plus grande que la cotangente de la pente du talus sera plus faible. Pour l’estimation du poids des enrochements, il y a la formule d’Hudson :</p>
-									<p class="text-center"><code>P = (&gamma;<sub>r</sub>.H<sup>3</sup>) / (K(&gamma;<sub>r</sub>/&gamma;<sub>e</sub>).cos &theta;)</code></p>
-									<ul class="list-unstyled">
-										<li><code>P</code> : poids des enrochements ;</li>
-										<li><code>&gamma;<sub>r</sub></code> : poids volumique de la roche ;</li>
-										<li><code>H</code> : amplitude significative de la houle ;</li>
-										<li><code>&gamma;<sub>e</sub></code> : poids volumique de H<sub>2</sub>O salée =1.03 ;</li>
-										<li><code>&theta;</code> : pente du talus ;</li>
-										<li><code>K</code> : coefficient (enrochement =3.4 ; tétrapode =7).</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingSeven">
-								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> 2. Brise lames </a></h4>
-							</div>
-							<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-								<div class="panel-body">Paragraphe deux</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingEight">
-								<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> 3. Epis </a></h4>
-							</div>
-							<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-								<div class="panel-body">Paragraphe trois</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="row">
-				<div class="col-sm-offset-1 col-sm-4 col-xs-6 text-center">Pour mater le projet, visitez le repository sur <a href="https://github.com/geotechdev/fstgat_gag" target="_blank"><i class="fab fa-github"></i> Github</a>, ou pour signaler un problème ou contacter, envoyez un email sur l'adresse suivante <a><i class="fas fa-at"></i> aitabdelmalekma@gmail.com</a>. Merci pour votre visite !</div>
-				<div class="col-sm-7 col-xs-6 text-center">Tous droits réservés <i class="far fa-copyright"></i> 2018, FSTGAT_GAG</div>
-			</footer>
-		</div>
-		<!--js libraries and bootstrap js cdn-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<!-- compiled and minified js for bootstrap 3.3.7 -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+                        <a class="navbar-brand" href="#">FSTGAT_GAG</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="../../index.html"><i class="fas fa-university"></i> Accueil</a></li>
+                            <li class="active"><a href="#"><i class="fas fa-book"></i> Cours</a></li>
+                            <li><a href="../rns.3.exercices.html"><i class="fas fa-graduation-cap"></i> Exercices</a></li>
+                            <li><a href="../rns.4.a_propos.html"><i class="fas fa-info-circle"></i> A Propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+                <ol class="breadcrumb">
+                    <li><a href="../../index.html">Accueil</a></li>
+                    <li><a href="../rns.2.cours.html">Cours</a></li>
+                    <li class="active">Génie Côtier</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-9 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Cours: l'étude génie côtier</h3>
+                        <h4>Pour les étudiants M1 en géotechnique</h4>
+                        <h5>Sommaire du cours</h5>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#ch1" class="list-group-item"><em>Chapitre 1: </em>Organigramme d'une étude maritime</a>
+                            <a href="#ch2" class="list-group-item"><em>Chapitre 2: </em>Protection et/ou stabilisation du littoral</a>
+                            <a href="#ch3" class="list-group-item"><em>Chapitre 3: </em>Ouvrages pour protéger/stabiliser le littoral</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch1">
+                <h2>Chapitre 1: Organigramme d'une étude maritime</h2>
+            </div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> L'organigramme : </a></h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ol>
+                                    <li><strong>Recueil des données existantes</strong> : (Observation et mesure en nature)
+                                        <ul>
+                                            <li>
+                                                <em>Données métrologiques</em> : tels que les nuages, les précipitations ou le vent dans le but de comprendre comment ils se forment et évoluent en fonction des paramètres mesurés tels que la pression, la
+                                                température et l'humidité. C’est une approche statistique d’environ 100 ans.
+                                            </li>
+                                            <li>
+                                                <em>Données hydrologiques</em> : l’hydrologie s'intéresse aux eaux superficielle (en surface), tels que le débit solides ou liquide des oueds (quantité d’agrégats qui alimentent le domaine maritime pour
+                                                avoir un littoral en équilibre).
+                                            </li>
+                                            <li>
+                                                <em>Données océanographiques</em> : permettent de connaitre l’hydrodynamisme d’une masse d’eau (tel que les principaux mouvements de la mer : houle qui est un mouvement sinusoïdal ; courant dû au vent géostrophique
+                                                à l’échelle planétaire et courant côtier indirect par rapport à la houle engendrée par la réflexion et la réfraction de la houle ; marées qui est, par exemple en méditerranée, un phénomène faible d’environ
+                                                50 cm, tandis qu’il atteint les 6 ou 7 mètres dans les côtes de l’océan Pacifique), la chimie de l’eau et l’environnement biologique dans les eaux.
+                                            </li>
+                                            <li>
+                                                <em>Données sédimentologiques</em> : connaissance de déplacement des particules, l’érosion ou l’ensablement du site.
+                                            </li>
+                                            <li>
+                                                <em>Données environnementales et pollution</em> : ces données nous renseignes sur le biotope du site (biocénose forment un écosystème) comme par exemple la Posidonie, qui est une algue brune se développant
+                                                sur le fond de la Mer Méditerranée, disposée à 5 m de profondeur et pouvant avoir une hauteur de 1.20 m, elles forment ce qu’on appelle ‘prairie’ ou ‘herbiers’ et elles constituent un écosystème majeur dans
+                                                la Méditerranée et jouent un rôle important dans la protection des côtes contre l'érosion.
+                                            </li>
+                                            <li>
+                                                <em>Examen du site</em> : observations (Plomb suiffé, descriptions de plongeurs, analyse de photos, …).
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Synthèse des phénomènes naturels et analyse sédimentologique</strong> : récolter et rassembler divers éléments concernant les phénomènes naturels du site et procéder à des analyses sédimentologiques du site.</li>
+                                    <li><strong>Etude sur plan</strong> : planification et établissement d’un plan ou d’un programme, c’est à dire, la mise en œuvre d’objectifs dans le temps et dans un domaine donné, avec des objectifs, des moyens et sur
+                                        une durée précise.</li>
+                                    <li><strong>Etude sur modèle réduit physique et mathématique</strong> : (Mesure éventuelle en nature)
+                                        <ul>
+                                            <li>
+                                                Model réduit mathématique : cela en utilisant des logiciels appropriés SWAN/SWATCH, afin de calculer plusieurs paramètres, tels que l’énergie et sa variation développée par la houle, la réflexion et la réfraction des vagues, la stabilité des ouvrages
+                                                etc., et donc analyser l’hydrodynamisme.
+                                            </li>
+                                            <li>
+                                                Model réduit physique : réduction et modalisation de l’étude à petite échelle et cela en utilisant des prototypes appropriés et en minimalisant des phénomènes naturels en laboratoire, soit à l’état naturel soit en ajoutant des variations proposées. Une
+                                                fois cette opération finie on reconvertis ses résultats à l’échelle du bassin.
+                                                <ul>
+                                                    <li>
+                                                        <em>A fond fix</em> : pour pouvoir faire des tests pour les structures maritimes (jetée : une structure rigide construite s'avançant dans la mer pour protéger un port contre le vent et la houle et
+                                                        servir comme débarquement de cargaisons).
+                                                    </li>
+                                                    <li>
+                                                        <em>A fond mobile</em> : pour pouvoir mettre en évidence les mouvements des sédiments meubles (sachant que c’est un environnement en équilibre précaire) et protéger contre les érosions et les engraissements.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Elaboration du projet</strong> (Réalisation et contrôle des prévisions).</li>
+                                    <li><strong>Etude sur model physique des phases de construction</strong>.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch2">
+                <h2>Chapitre 2: Protection et/ou stabilisation du littoral</h2>
+                <p>Le littoral, étant en équilibre précaire, n'offre nulle garantie de stabilité ; Deux phénomènes peuvent influencer cet équilibre et déstabiliser le littoral :</p>
+                <ul>
+                    <li>Erosion : on parle alors de régression du littoral ou le recul du littoral non compensé par l’engraissement locale dus à la disparition des végétaux stabilisant, vase, dune, arrière plage ou la diminution d’apport terrigène. Exemple
+                        d’érosion : littoral du Sidi Fredj.</li>
+                    <li>Engraissement : on parle alors d’hyper-sédimentation du littoral dû à l’ensablement ou envasement du littorale (matériaux amené par le courant du large vers la cote). Exemple d’engraissement : l’élargissement de la plage au port de
+                        Skikda selon sa longueur.</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive"> 1. Régime sédimentologique </a></h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <p>Le régime sédimentologique du littoral consiste à définir les différents vecteurs de déplacement des matériaux sédimentaires le long du littoral et dépend de 3 facteurs :</p>
+                                <ul>
+                                    <li><em>Sédimentation disponible</em> : origine, nature et quantité des sédiments.</li>
+                                    <li><em>Facteurs hydrodynamiques</em> :
+                                        <ul>
+                                            <li><strong>Vent :</strong> Mouvement de l'air se déplaçant d'une zone de hautes pressions vers une zone de basses pressions.</li>
+                                            <li><strong>Marée :</strong> variation du niveau de la mer due à l'action gravitationnelle de la Lune et du Soleil (50cm entre base et haute). La marée atlasique 10m. Le <em>marnage</em> : est le dénivelé entre
+                                                les niveaux d'une marée haute et d'une marée basse successive.</li>
+                                            <li><strong>Houle :</strong> train de vagues régulier, de longue période, non pas généré par le vent local mais formé et ordonné par un vent soufflant sur une grande étendue de mer sans obstacles.<br>(Vague : mouvement
+                                                ondulatoire sous effet du vent, celle-ci se casse lorsque la pente arrive à 120° et c’est là que l’on a le max d’énergie H=1/3).<br>On peut voir dans ce schéma les composantes de la houle. Comme la longueur
+                                                d’onde λ ou L, la hauteur de la houle et sa profondeur. A partir de la profondeur de l’ordre de 30 m, les trains de vagues se modifient et créent une <a href="https://fr.wikipedia.org/wiki/D%C3%A9ferlement"
+                                                    target="_blank">zone de déferlement</a>* qui cause une remise en suspension des particules sableuses.<br><a href="../img/houle.png" target="_blank"><img src="../img/houle.png" class="img-responsive img-thumbnail" alt="Schéma de la houle"></a></li>
+                                            <li><strong>Courant :</strong> mouvement de mer régulier, continue et cyclique dus à la combinaison de plusieurs effets comme la température, la densité, la salinité, le vent etc. Des différents courants côtiers
+                                                il y a :
+                                                <ul>
+                                                    <li><strong>Courants de dérive littoral</strong>, dont la condition pour l’apparition est lorsque les traines d’onde de la houle forme une incidence (angle) avec le littoral, plus l’angle d’incidence sera
+                                                        fort et plus le courant sera important.<br>
+                                                        <a href="../img/courant_derive.png" target="_blank"><img src="../img/courant_derive.png" class="img-thumbnail img-responsive" alt="Schéma du courant de dérive littoral"></a>
+                                                    </li>
+                                                    <li><strong>Courants de retour</strong>, dont la condition d’apparition est lorsque les traines d’ondes abordent la côte parallèlement.<br>
+                                                        <a href="../img/courant_retour.png" target="_blank"><img src="../img/courant_retour.png" class="img-responsive img-thumbnail" alt="Schéma du courant de retour"></a>
+                                                    </li>
+                                                    <li><strong>Courants d’extension/compensation</strong>, c’est un courant qui apparait lors du passage d’une zone de forte énergie vers une zone de basse énergie.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><em>Facteurs généraux</em> (Géologie et hydrographie*).</li>
+                                </ul>
+                                <p>
+                                    <small>* Le déferlement des vagues est la déformation rapide du profil de l'onde, associé à la production de turbulence.</small><br>
+                                    <small>* Hydrographie : partie de la géographie physique qui traite des eaux marines ou douces. Ensemble des eaux courantes ou stables d'un pays. Topographie maritime qui a pour objet de lever le plan du fond des mers et des fleuves.</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 2. Estimation du transit des sédiments </a></h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p>La houle est le principal agent responsable du transport des sables le long d’un littoral. Le déplacement des sédiments s’effectue de façons multiples suivant les caractéristiques des matériaux, à la profondeur à laquelle
+                                    ils se trouvent et les conditions océanographiques.</p>
+                                <p>Dans le <em>cas des sables fins</em>, le transport s’effectue soit en suspension sous l’action de fortes houles et il constitue 75% des transport ; par contre pour les sables grossiers, leur déplacement se fait par jet
+                                    de rive, ces sables grossiers se localisent essentiellement à l’interface entre plage aérienne et plage sous-marine (déplacement en dents-de-scies).</p>
+                                <p>Connaissant le pourcentage des différentes houles qui règnent dans une année, il est possible de faire un bilan annuel des possibilités des mise-en-mouvement des sédiments. Il existe plusieurs méthodes d’estimation du transit,
+                                    dont la méthode du LCHF :</p>
+                                <p class="text-center"><code>Q = &Sigma; K / (g.C.H<sup>2</sup>.T.t.<em>f</em>(&alpha;))</code></p>
+                                <ul class="list-unstyled">
+                                    <li><code>Q</code> : quantité des sédiments déplacés [m<sup>3</sup>/an] ;</li>
+                                    <li><code>K</code> : coefficient qui est fonction de la taille des sables (sable fin : K= 2,5.10<sup>-6</sup>) ;</li>
+                                    <li><code>C</code> : cambrure de la houle C = H/&lambda; avec H : hauteur de la houle et &lambda; : longueur d'onde de la houle ;</li>
+                                    <li><code>g</code> : accélération de la pesanteur ;</li>
+                                    <li><code>H</code> : hauteur significatif de la houle [m] ;</li>
+                                    <li><code>T</code> : période de la houle ;</li>
+                                    <li><code>t</code> : temps =365.24.F/100 , avec F : fréquence d’apparition de houle ;</li>
+                                    <li><code><em>f</em>(&alpha;)</code> : fonction de l’obliquité de la houle à -15m de profondeur.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 3. Caractérisation prépondérantes du régime sédimentologique </a></h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ol>
+                                    <li>Mouvements longitudinaux dans le profil : cas des courants de dérive littoral, caractérisé par un déplacement parallèle des particules par rapport à la cote, son orthogonal fait un angle de 30° à 70°.</li>
+                                    <li>Mouvements transversaux ou transit littoral : cas des courants de retour, caractérisé par un déplacement perpendiculaire des particules par rapport à la cote (déplacement de la cote vers le large), son orthogonale fait
+                                        un angle de 90° ; il y’a changement de morphologie en un courant orbitale.</li>
+                                    <p>NB : On parle de ‘courant d’expansion ou de compensation’ quand le courant est créé à l’abri d’un ouvrage (il y’a donc absorption d’énergie c.à.d. passage d’une zone de haute énergie a une zone de faible énergie).</p>
+                                    <li>Mouvement Transversaux + Longitudinaux (courant de retour et dérive littoral)</li>
+                                    <li>Matériaux disponible (Apport naturels suffisant ? oui ou non)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree"> 4. Ouvrages pour protéger/stabiliser le littoral </a></h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>Pour bloquer le déplacement des particules, on crée des ouvrages en fonction des contraintes hydrodynamique. Nous avons :</p>
+                                <ul>
+                                    <li><em>Ouvrages longitudinaux</em> (parallèle au rivage) : contre les mouvements transversaux ou ‘courants de retour’ comme : les hauts de plages (pierres, murs, digues) et les brise lames.</li>
+                                    <li><em>Ouvrages Transversaux</em> (Perpendiculaire au rivage) : contre les mouvements longitudinaux ou ‘courants de dérive littoral’ comme les épis.</li>
+                                    <li><em>Ouvrages transversaux et longitudinaux.</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch3">
+                <h2>Chapitre 3: Ouvrages pour protéger/stabiliser le littoral</h2>
+            </div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix"> 1. Haut de plages </a></h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <p>C’est la partie de la plage située entre le pied de dune ou de falaise et la limite des hautes mers de marées moyennes. C’est un mur, des digues ou des pierres d’une hauteur H qui correspond à la hauteur max de la houle
+                                    annuel.
+                                </p>
+                                <p>Pour s’attaquer à l’action frontale de la houle et éviter des dégradations importantes de la côte (‘l’effet Renard’ ou ‘l’affouillement’) ; les hauts de plage sont fréquemment protégés par des ouvrages longitudinaux. Ce
+                                    type d’ouvrage se retrouve devant des zones urbaines, des zones industrielles et des routes de front-de-mer.</p>
+                                <p>La cause de la dégradation des parties hautes de la plage est la réflexion de la houle (changements de directions). Cette réflexion est observée si la cambrure de la houle est inférieure à une certaine valeur de la pente
+                                    du talus.</p>
+                                <p>Cambrure C = (H hauteur de la houle/L longueur d’onde) &le; 2&alpha;/&pi;sin<sup>2</sup>(&alpha;/&pi;).</p>
+                                <p>Pour être acceptable, l’ouvrage longitudinal de haut de plage doit répondre aux impératives suivantes :</p>
+                                <ul>
+                                    <li>L’ouvrage doit être très peu réfléchissant, ce qui conduit à des ouvrages à faible pente, il faut qu’il soit le plus possible absorbant ;</li>
+                                    <li>Ils ne doivent pas présenter d’affouillement à leur niveau le plus bas ;</li>
+                                    <li>Les ouvrages de haute plage ne doivent être submersible par la vague.</li>
+                                </ul>
+                                <p>Pour calculer la côte (hauteur de l’ouvrage), on devra tenir de la hauteur théorique d’ascension de la houle sur le talus.</p>
+                                <p>(Exemple : pour un ouvrage absorbant constitué d’enrochement, on admettra que la côte supérieure de l’ouvrage doit être égale à <strong>h = 1.25H<sub>1/10</sub></strong>. H<sub>1/10</sub> =1.95H<sub>m</sub>. H<sub>m</sub>                                    : hauteur moyenne arithmétique).</p>
+                                <p>D’une façon générale, l’ascension de la houle sera d’autant plus grande que la cotangente de la pente du talus sera plus faible. Pour l’estimation du poids des enrochements, il y a la formule d’Hudson :</p>
+                                <p class="text-center"><code>P = (&gamma;<sub>r</sub>.H<sup>3</sup>) / (K(&gamma;<sub>r</sub>/&gamma;<sub>e</sub>).cos &theta;)</code></p>
+                                <ul class="list-unstyled">
+                                    <li><code>P</code> : poids des enrochements ;</li>
+                                    <li><code>&gamma;<sub>r</sub></code> : poids volumique de la roche ;</li>
+                                    <li><code>H</code> : amplitude significative de la houle ;</li>
+                                    <li><code>&gamma;<sub>e</sub></code> : poids volumique de H<sub>2</sub>O salée =1.03 ;</li>
+                                    <li><code>&theta;</code> : pente du talus ;</li>
+                                    <li><code>K</code> : coefficient (enrochement =3.4 ; tétrapode =7).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> 2. Brise lames </a></h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                <p>
+                                    Ouvrage longitudinale (parallèle au rivage) à petit fond est conçue en cas de mouvement transversaux, cas du courant de retour, en effet quand il y a une perte de matériaux vers le large. La brise lame va faire en sorte de créer une nouvelle formation
+                                    sédimentaire appeler <a href="https://fr.wikipedia.org/wiki/Tombolo" target="_blank">TOMBOLO</a> (1 an de formation).
+                                </p>
+                                <p>
+                                    Pour la création d’un tombolo, il est nécessaire de dimensionner votre ouvrage, et ces 4 dimensions sont importantes lors de la conception d’un brise lame :
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        L : longueur d’onde de la houle ;
+                                    </li>
+                                    <li>
+                                        L1 : longueur de la brise lame ;
+                                    </li>
+                                    <li>
+                                        L2 : l’implantation du brise lame par rapport à la côte ;
+                                    </li>
+                                    <li>
+                                        L3 : distance entre deux brises lame.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Les extrémités de brise lames vont transformer une houle initialement frontale à une houle oblique.
+                                </p>
+                                <h4>L’influence de la longueur de brise lames L1 :</h4>
+                                <p>
+                                    Il existe une distance et une profondeur (d’eau) optimale d’implantation de l’ouvrage. En particulier la profondeur relative au droit de l’ouvrage. Celle-ci est importante pour son efficacité ; si on augmente la distance à la côte, l’efficacité diminue
+                                    ; par contre si la distance est trop faible, le bassin de dissipation de brise lames est trop petit pour absorber l’énergie de la houle.
+                                </p>
+                                <p>
+                                    Il est préconisé, que pour un brise lames puisse former un tombolo, il y a deux relations qui le permettent : <code>L1 &ge; (L2+0.3L)</code> selon LCHF. Et <code>L1 ≈ 1.25L</code> selon la SOGREAH.
+                                </p>
+                                <table class="table table-hover table-bordered table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th rowspan="4">
+                                                Profondeur du fond
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                Ouvrages
+                                            </th>
+                                            <td>
+                                                Prof. de la côte
+                                            </td>
+                                            <td>
+                                                Faible prof.
+                                            </td>
+                                            <td>
+                                                Moyenne prof.
+                                            </td>
+                                            <td>
+                                                Grande prof.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                Profondeur [m]
+                                            </th>
+                                            <td>
+                                                &lt; 1
+                                            </td>
+                                            <td>
+                                                1 - 2
+                                            </td>
+                                            <td>
+                                                2 - 6
+                                            </td>
+                                            <td>
+                                                &gt; 6
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                L1 [m]
+                                            </th>
+                                            <td>
+                                                2 à 3L
+                                            </td>
+                                            <td>
+                                                3 à 10L
+                                            </td>
+                                            <td>
+                                                #
+                                            </td>
+                                            <td>
+                                                #
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Exemple : on obtient selon le LCHF, pour une pente de 1/50 (2%), l’ouvrage aura une longueur de 200m, alors que pour la Sogreah, L1 aura une longueur de 80m.<br /><em>On ne construit jamais un brise lames unique !</em>
+                                </p>
+                                <h4>Espacement entre les brises lames</h4>
+                                <p>
+                                    B : espacement entre 2 brise lames <code>&le; 0.83L2+L/2</code> ; selon LCHF.<br />Brise lames implanté à 3m de fond, L2=150m ; T=10s au large, T=6.5s à l’approche du brise lames ; on trouve que l’espacement B doit
+                                    être de 150m.<br />Selon Toyoshima, un espacement de 0.5L&le;B&le;1.5L est proposé. Et donc pour l’exemple pour l’exemple précédent, on aura B ≈ 80m.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> 3. Epis </a></h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                        <div class="panel-body">
+                            <p>
+                                Lorsque les mouvements sédimentaires prédominant sont parallèles à la côte (courants de dérive littoral), les ouvrages tel que les épis sont utiles pour freiner les courants d'eau et limiter les mouvements de sédiments.<br
+                                />Les épis ont pour but :
+                            </p>
+                            <ul>
+                                <li>
+                                    La stabilisation d’une plage en piégeant une partie de sédiments en transit ;
+                                </li>
+                                <li>
+                                    Former un cloisonnement permettant de maintenir un remblai de haut de plage ;
+                                </li>
+                                <li>
+                                    L’implantation d’épis va permettre de protéger les zones portuaires (protéger de l’ensablement).
+                                </li>
+                            </ul>
+                            <h3>Fonctionnement des épis :</h3>
+                            <p>
+                                Les épis formant un relief par rapport au terrain avoisinant, arrête tout ou une partie de sédiments en transit. Il se produit dans la zone "au-vent" ou "face-au-vent" (donc face à la direction de la traine d’ondes) une accumulation de matériaux qui tend
+                                à épouser la forme des crêtes de houles ; par contre dans la zone "sous le vent", il va se produire une érosion.<br />Nous avons deux cas de figures :
+                            </p>
+                            <ul>
+                                <li>
+                                    1<sup>ier</sup> cas : 1 seule traine d’ondes dominante (<em>cas d’un transit unidirectionnel</em>) = profil en équilibre de type "oblique" + schéma
+                                </li>
+                                <li>
+                                    2<sup>ième</sup> cas : 2 traines d’ondes dominantes (<em>cas d’un transit bidirectionnel</em>) = profil en équilibre de type "alvéolaire" + schéma
+                                </li>
+                            </ul>
+                            <h3>Dimension des épis :</h3>
+                            <p>
+                                Pour la réalisation d’une protection constituée d’épis, il faut une remontée vers la zone d’où proviennent les matériaux. Le premier épi est implanté dans la zone la plus éloigné. Et pour calculer l’espacement entre deux épis, nous avons une relation
+                                qui :
+                            </p>
+                            <p class="text-center">
+                                <code>E = L.a.(1 + tg<sup>2</sup>&alpha;)/tg<sup></sup>&alpha;</code>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <code>L</code> : longueur d’ondes ;
+                                </li>
+                                <li>
+                                    <code>&alpha;</code> : incidence moyenne de la houle par rapport au trait de la côte ;
+                                </li>
+                                <li>
+                                    <code>a</code> : distance entre le trait de la côte initial et le nouveau trait de côte désiré.
+                                </li>
+                            </ul>
+                            <p>
+                                Le dimensionnement de l’épi dépend de longueur et de la hauteur. L’épaisseur n’a aucun effet sur l’ouvrage. Et la longueur de l’épi sera en fonction de la profondeur moyenne de déferlement.
+                            </p>
+                            <ul>
+                                <li>
+                                    <em>Epi court</em> : longueur de 50 à 70 m, et l’espacement entre les épis 1.5L&lt;E&lt;4L. Utilisé en cas de sable grossier + galet (transport par jet de rive, c.à.d. déplacement en dents de scie)
+                                </li>
+                                <li>
+                                    <em>Epi long</em> : longueur établie selon une formule, et l’espacement entre les épis est de E=1.5L (si &alpha;=20°) ; E=3.5L (si &alpha;=10°) ; E=4L (si &alpha;=5°). Utilisé en cas de particules fines à moyennes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="col-sm-offset-1 col-sm-4 col-xs-6 text-center">Pour mater le projet, visitez le repository sur <a href="https://github.com/geotechdev/fstgat_gag" target="_blank"><i class="fab fa-github"></i> Github</a>, ou pour signaler un problème ou contacter, envoyez un email sur l'adresse suivante
+            <a><i class="fas fa-at"></i> aitabdelmalekma@gmail.com</a>. Merci pour votre visite !</div>
+        <div class="col-sm-7 col-xs-6 text-center">Tous droits réservés <i class="far fa-copyright"></i> 2018, FSTGAT_GAG</div>
+    </footer>
+    </div>
+    <!--js libraries and bootstrap js cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- compiled and minified js for bootstrap 3.3.7 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
 </html>
