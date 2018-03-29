@@ -59,8 +59,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 
 .offline {
     padding: 20px;
-    position: relative;
-    bottom: 25px;
     background-color: rgb(33, 33, 33);
     color: whitesmoke;
     font-weight: 900;
