@@ -76,6 +76,17 @@ font-family: 'PT Sans Narrow', sans-serif;
     cursor: pointer;
 }
 
+.offline {
+    padding: 20px;
+    position: relative;
+    bottom: 25px;
+    background-color: rgb(33, 33, 33);
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 div img {
     border-radius: 20px;
 }
