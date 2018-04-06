@@ -1,12 +1,12 @@
+// object person
 var perso = {
     nom: "Aurora",
     sante: 150,
     force: 25,
     xp: 0,
-    decrire: function() {
-        var description = this.nom + " a " + this.sante + " points de vie et " +
+    decrire: () => {
+        return this.nom + " a " + this.sante + " points de vie et " +
             this.force + " en force";
-        return description;
     }
 };
 
@@ -18,11 +18,13 @@ perso.xp = perso.xp + 15;
 
 console.log(perso.decrire());
 
+
+// object chien
 var chien = {
     nom: "Crockdur",
     race: "mâtin de Naples",
     taille: 75,
-    aboyer: function() {
+    aboyer: () => {
         return "Grrr ! Grrr !"
     }
 };
@@ -30,13 +32,15 @@ console.log(chien.nom + " est un " + chien.race + " mesurant " + chien.taille + 
 console.log("Tiens, un chat ! " + chien.nom + " aboie : " + chien.aboyer());
 
 
+
+// object maths
 console.log("\nVous entrez un rayon d'un cercle que nous renvoyons p et s")
 var r = Number(prompt("Entrez le rayon d'un cercle :"));
 var cercle = {
-    perimetre: function() {
+    perimetre: () => {
         return r * 2 * Math.PI;
     },
-    aire: function() {
+    aire: () => {
         return r * r * Math.PI;
     }
 };
@@ -45,6 +49,7 @@ console.log("Son périmètre vaut " + cercle.perimetre());
 console.log("Son aire vaut " + cercle.aire());
 
 
+// object banque
 var compte = {
     titulaire: "Alex",
     solde: 0,
