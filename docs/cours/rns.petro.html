@@ -2,436 +2,827 @@
 <html lang="fr" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no viewport-fit=cover">
-    <!-- Name of web application (only should be used if the website is used as an app)-->
-    <meta name="application-name" content="FSTGAT_GAG">
-    <!-- Theme Color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="rgb(33,33,33)">
-    <!-- Add to home screen -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
-    <!-- Disable translation prompt -->
-    <meta name="google" content="notranslate">
-    <!-- Force IE 8/9/10 to use its latest rendering engine -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cours sur la pétrographie - FSTGAT_GAG</title>
-    <link rel="icon" type="image/png" href="../img/logo_home.png">
-    <meta name="description" content="Cours de la nouvelle plateforme pour les étudiants en Géologie Appliquée - Géotechnique">
-    <link rel="stylesheet" type="text/css" href="rns.basic.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no viewport-fit=cover">
+  <!-- Name of web application (only should be used if the website is used as an app)-->
+  <meta name="application-name" content="FSTGAT_GAG">
+  <!-- Theme Color for Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="rgb(33,33,33)">
+  <!-- Add to home screen -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+  <!-- Disable translation prompt -->
+  <meta name="google" content="notranslate">
+  <!-- Force IE 8/9/10 to use its latest rendering engine -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cours sur la pétrographie - FSTGAT_GAG</title>
+  <link rel="icon" type="image/png" href="../img/logo_home.png">
+  <meta name="description" content="Cours de la nouvelle plateforme pour les étudiants en Géologie Appliquée - Géotechnique">
+  <link rel="stylesheet" type="text/css" href="rns.basic.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-    <!-- bootstrap cdn 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- js effect scroll-->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Mina|Roboto+Condensed|PT+Sans+Narrow" rel="stylesheet">
-    <!-- font awesome for icons in bootstrap -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <!-- bootstrap cdn 3.3.7 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- js effect scroll-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu|Mina|Roboto+Condensed|PT+Sans+Narrow" rel="stylesheet">
+  <!-- font awesome for icons in bootstrap -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header class="row">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <div class="container-fluid">
+    <header class="row">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-                        <a class="navbar-brand" href="#">FSTGAT_GAG</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="../../index.html"><i class="fas fa-university"></i> Accueil</a></li>
-                            <li class="active"><a href="#"><i class="fas fa-book"></i> Cours </a></li>
-                            <li><a href="../rns.3.exercices.html"><i class="fas fa-graduation-cap"></i> Exercices</a></li>
-                            <li><a href="../rns.4.a_propos.html"><i class="fas fa-info-circle"></i> A Propos</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="row">
-            <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-                <ol class="breadcrumb">
-                    <li><a href="../../index.html">Accueil</a></li>
-                    <li><a href="../rns.2.cours.html">Cours</a></li>
-                    <li class="active">Pétrographie</li>
-                </ol>
-            </div>
+            <a class="navbar-brand" href="#">FSTGAT_GAG</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="../../index.html"><i class="fas fa-university"></i> Accueil</a></li>
+              <li class="active"><a href="#"><i class="fas fa-book"></i> Cours </a></li>
+              <li><a href="../rns.3.exercices.html"><i class="fas fa-graduation-cap"></i> Exercices</a></li>
+              <li><a href="../rns.4.a_propos.html"><i class="fas fa-info-circle"></i> A Propos</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-9 col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>Cours: Pétrographie</h3>
-                        <h4>Pour les étudiants de la géologie</h4>
-                        <h5>Sommaire du cours</h5>
-                    </div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a href="#ch1" class="list-group-item"><em>Chapitre 1: </em>Introduction</a>
-                            <a href="#ch2" class="list-group-item"><em>Chapitre 2: </em>Pétrographie magmatique</a>
-                            <a href="#ch3" class="list-group-item"><em>Chapitre 3: </em>Pétrographie métamorphique</a>
-                            <a href="#ch4" class="list-group-item"><em>Chapitre 4: </em>Pétrographie sédimentaire</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch1">
-                <h2>Chapitre 1: Introduction</h2>
-            </div>
-            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 1. Notions de pétrographie </a></h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <p>
-                                    La <strong>pétrographie</strong>, au sens large, est la science des roches : leur description (pétrographie au sens strict), leur classification et l'interprétation de leur genèse (Foucault & Raoult, 1995). La pétrographie
-                                    s'appuie sur les sciences géologiques comme la minéralogie, la lithologie, la stratigraphie, la géodésie et la paléontologie. Il est à noter que le terme 'pétrographie', est de plus en plus remplacé par le terme 'pétrologie'.
-                                </p>
-                                <p>
-                                    La <strong>roche</strong> est un matériau constitutif de l'écorce terrestre, formé en général d'un assemblage de minéraux (solide, liquide et gazeux). En géologie, la notion de roche comprend donc tous les types de
-                                    matériaux constituant l'écorce terrestre, y compris les sols meubles.<br />Le pétrographe, outre l'étude de la composition minéralogique des roches, essaie de reconstituer l'histoire de la Terre dont les roches sont
-                                    les témoins. L'étude des roches a permis d'apprendre et de comprendre beaucoup d'aspects : de géographie et des climats du passé, de composition interne de notre planète et des conditions qui y règnent, des formations
-                                    des continents et leur mouvement, de l'évolution des espèces végétales et animales, en particulier celle de l'homme.
-                                </p>
-                                <h3>Les trois grands groupes de roches et leur cycle évolutif</h3>
-                                <p>
-                                    En pétrographie, la classification fondamentale est basée sur l'<em>origine</em> des roches et leur <em>processus de formation</em> (appelé <em>genèse</em>). On peut aussi classer les roches en trois grands groupes
-                                    :
-                                </p>
-                                <ul>
-                                    <li>
-                                        Les <strong>roches magmatiques</strong> (encore appelé roches ignées) : qui résultent du refroidissement et de la consolidation de bains silicatés en fusion, appelés <strong>magma</strong>. Ce refroidissement se
-                                        fait soit à la surface de la Terre (cas des roches volacaniques), soit au sein de l'écorce terrestre (cas des roches plutoniques).
-                                    </li>
-                                    <li>
-                                        Les <strong>roches métamorphiques</strong> qui sont formées à partir de roches préexistantes essentiellement par recristallisation due à des élévations de température et de pression.
-                                    </li>
-                                    <li>
-                                        Les <strong>roches sédimentaires</strong> qui se forment à partir de la désintégration (altération) d'autres roches à la surface de la Terre ou dans l'eau, soit à partir de la précipitation chimique ou biochimique
-                                        de solutions.
-                                    </li>
-                                </ul>
-                                <p>
-                                    Les roches proviennent toutes à l'origine du magma en fusion et subissent une évolution dans le temps. Ainsi, par exemple, une roche sédimentaire peut être le produit de l'altération de roches métamorphiques, elles-mêmes étant le produit du métamorphisme
-                                    de roches, soit magmatiques, soit sédimentaires, soit métamorphiques. Les relations et le cycle d'évolution des trois grands groupes de roches sont représentés sur <a href="https://fr.wikipedia.org/wiki/Cycle_g%C3%A9ologique#/media/File:Cycle_g%C3%A9ologique.png"
-                                        target="_blank">ce schéma</a>.
-                                </p>
-                                <p>
-                                    Les proportions respectives des trois groupes de roches au sein de la croûte terrestre (Ronov & Yaroshevsky, 1969) sont :
-                                </p>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        Roches magmatiques : proportions volumiques au sein de la croûte terrestre 65% ;
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                Granodiorites : 10% ;
-                                            </li>
-                                            <li>
-                                                Diorites : 11% ;
-                                            </li>
-                                            <li>
-                                                Basaltes : 43% ;
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Roches sédimentaires : proportions volumiques au sein de la croûte terrestre 8% ;
-                                    </li>
-                                    <li>
-                                        Roches métamorphiques : proportions volumiques au sein de la croûte terrestre 27% ;
-                                    </li>
-                                </ul>
-                                <p>
-                                    Si les roches ignées (ou magmatiques) sont de loin les plus nombreuses, elles sont généralement recouvertes par des roches sédimentaires, que ce soit sur les fonds océaniques ou sur les continents. Mis à part les reliefs, les roches sédimentaires forment
-                                    donc la "pellicule" de surface de la croûte terrestre, principale partie de la terre concernée par les travaux de l'ingénieur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 2. Méthodes d'étude </a></h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                <p>
-                                    Les méthodes d'observation et d'étude sont les mêmes à peu de chose près quel que soit le type de roche étudiée, même si la façon de les appliquéer peut différer pour chaque cas.
-                                </p>
-                                <ul>
-                                    <li>
-                                        <em>Méthodes de terrains</em> : L'étude
-                                    </li>
-                                    <li>
-                                        <em>Au laboratoire</em> :
-                                        <ul>
-                                            <li>
-                                                <em>Méthodes optiques</em> :
-                                            </li>
-                                            <li>
-                                                <em>Méthodes chimiques</em> :
-                                            </li>
-                                            <li>
-                                                <em>Méthodes physico-chimiques</em> :
-                                            </li>
-                                            <li>
-                                                <em>Séparation magnétique</em> :
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch2">
-                <h2>Chapitre 2: Pétrographie magmatique</h2>
-            </div>
-            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 1. Les minéraux des roches magmatiques </a></h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 2. Cristallisation des magmas </a></h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> 3. Origine des magmas </a></h4>
-                        </div>
-                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSix">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> 4. Classification des roches magmatiques - gisement </a></h4>
-                        </div>
-                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSeven">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> 5. Classification des roches magmatiques - texture </a></h4>
-                        </div>
-                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingEight">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> 6. Classification des roches magmatiques - composition minéralogique </a></h4>
-                        </div>
-                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingNine">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"> 7. Classification des roches magmatiques - composition chimique </a></h4>
-                        </div>
-                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTen">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"> 8. Les séries magmatiques </a></h4>
-                        </div>
-                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                            <div class="panel-body">xxx</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch4">
-                <h2>Chapitre 4: Pétrographie sédimentaire</h2>
-            </div>
-            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingEleven">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"> 1. Introduction </a></h4>
-                        </div>
-                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-                            <div class="panel-body">
-                                <p>
-                                    La pétrographie sédimentaire désigne la description des différents types de roches sédimentaires. C’est une branche des sciences géologiques.
-                                </p>
-                                <p>
-                                    <em>Le sédiment</em> est un ensemble de particule de taille variable ou de matière précipité d’origine chimique ayant subis ou pas un transport. On étudie les roches sédimentaires parce qu’elles constituent 5% de la
-                                    croûte terrestre, et elles recouvrent 75% de la surface terrestre.
-                                </p>
-                                <p>
-                                    <em>Altération</em> constitue l’essentiel des mécanismes qui libèrent des particules de roches et soustraient les éléments dissous à la surface du globe, avant qu’interviennent les processus d’érosion, de transport
-                                    et de sédimentation.
-                                </p>
-                                <p>
-                                    <em>Erosion / altération physique</em> associée à l’altération, elle prédomine dans les régions ou nous avons de grandes variations de température et d’humidité, elle s’opère par cristallisation de l’eau ou de sel dans
-                                    les fractures ou les pores. Elle représente le point de départ du transport particulaire, ses agents sont très variés et sont représentés par le vent, pluie et ruissellements, glace, eau continentale, eau marine (vagues,
-                                    marées, houles), topographie, durée de l’exposition, action des organismes biologiques.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwelve">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"> 2. Roches sédimentaires détritiques </a></h4>
-                        </div>
-                        <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-                            <div class="panel-body">
-                                <h3>Conglométats</h3>
-                                <p>
-                                    On parle de conglomérats quand la roche sédimentaire contient au moins 50% des éléments dont la taille est supérieure à 2mm. Les conglomérats impliquent une signification tectonique. Le ciment* par sa nature et son contenu fossilifère renseigne sur le
-                                    milieu définitif du dépôt. Les conglomérats se placent généralement à la limite des cycles géologiques.<br />
-                                    <small>* Ciment : est une précipitation secondaire chimique ou diagenétique.</small>
-                                </p>
-                                <h3>Brèches</h3>
-                                <p>
-                                    On parle de brèches, quand 50% des éléments étant anguleux. Le milieu générateur intervient comme moyen matériel de classification :<br /> Brèche sédimentaire : cette famille est caractérisée par un ciment engendré
-                                    indépendamment des éléments, il est lui-même un sédiment (ciment) qui peut être fossilifère ou non
-                                </p>
-                                <ol>
-                                    <li>
-                                        <em>Brèche subaérienne</em> : elle résulte de l’action des agents atmosphériques responsables de la fragmentation des roches, notamment le gel et le dégel dans un climat froid.
-                                        <ul>
-                                            <li>
-                                                <em>Brèches de pente</em> : ce sont des éboulis cimentés parmi lesquels des blocs où la glace joue par endroit un rôle important, ces brèches sont caractérisées par une forte hétérométrie.
-                                            </li>
-                                            <li>
-                                                <em>Brèches de torrents</em> : ce sont des brèches qui s’accumulent aux fonds des oueds, on les retrouve généralement dans les climats arides.
-                                            </li>
-                                            <li>
-                                                <em>Brèches des cavernes</em> : nous les retrouvant dans les cavités sous-terraine dû aux phénomènes karstiques, par dissolution et effondrement chaotiques dû aux eaux d’infiltration.
-                                            </li>
-                                            <li>
-                                                <em>Brèches glaciers</em> : (tillites) la fragmentation est dû au mouvement de la masse glaciaire, elles sont caractérisées par une forte hétérométrie.
-                                            </li>
-                                            <li>
-                                                <em>Brèches météoriques</em> : en climat désertique, les éléments arrachés par la différence de température peuvent être cimentés par l’évaporation des eaux interstitielles.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <em>Brèches subaquatiques</em> : ce sont des brèches qui se forment aux milieux marins. Nous pouvons distinguer plusieurs types :
-                                    </li>
-                                    <li>
-                                        <em>Brèche tectonique</em> : elles accompagnent des zones de grande fracturation notamment les diaclases et les failles. Elles peuvent être monogéniques ou polygéniques.
-                                        <ul>
-                                            <li>
-                                                <em>Brèches de pente sous-marine</em> : Elles ressemblent à celles formées au milieu continental (aérien) ; cependant, elles caractérisées par une inter-stratification et la présence de fossiles marins dans
-                                                le ciment. Elles sont liées au glissement des sédiments sur le talus continental.
-                                            </li>
-                                            <li>
-                                                <em>Brèches récifales</em> : elles sont caractéristiques par la cimentation des fragments arrachées aux coraux par les vagues.
-                                            </li>
-                                            <li>
-                                                <em>Brèches ossifères</em> : généralement phosphatées, elles proviennent et soulignent des niveaux bécatombes (mort massive).
-                                            </li>
-                                            <li>
-                                                <em>Brèches intra-formationnelles</em> : elles sont monogéniques, et elles résultent de la fragmentation des couches sédimentaires partiellement consolidées.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <em>Brèche volcanique</em> : elles sont constituées de produits volcaniques solides, déposées au milieu aérien ou aquatique. Elles sont dû d’explosion volcanique ou d’effusion (écoulement).
-                                    </li>
-                                    <li>
-                                        <em>Brèche physico-chimique</em> : liées aux phénomènes d’intrusion, d’éclatement, de dessiccation, de recristallisation.
-                                    </li>
-                                </ol>
-                                <h3>Poudings</h3>
-                                <p>
-                                    On parle de poudings quand 50% des étant arrondis. De manière générale, l’étude des conglomérats prend compte plusieurs paramètres :
-                                </p>
-                                <ol>
-                                    <li>
-                                        Forme (Brèche, Pouding) et renseigne sur le transport ;
-                                    </li>
-                                    <li>
-                                        Nature (monogénique ou polygénique) et renseigne sur l’évolution orogénique des provinces nourricières ;
-                                    </li>
-                                    <li>
-                                        Distribution granulométrique (monomérique ou hétérométrique) et renseigne sur l’hydrodynamisme du milieu ;
-                                    </li>
-                                    <li>
-                                        Nature du ciment/matrice : (argileux, gréseux, carbonaté,…) et renseigne sur le milieu de dépôt et de la diagénèse ;
-                                    </li>
-                                    <li>
-                                        Texture : c’est la disposition jointive ou non des éléments, orientation des éléments et nous renseigne sur l’hydrodynamisme/transport.
-                                    </li>
-                                </ol>
-                                <p>
-                                    Les conglomérats sont étudiés par des méthodes quantitatives et qualitatives.<br /> La méthode quantitative développée par Ritcher Fuchtbaur en 1980 repose sur la nature des éléments, le liant et la structure du corps
-                                    sédimentaires. Nous indiquons l’âge, la taille, l’émoussé, le stade de lithification, ajustement entre les éléments, texture.<br /> Sédiment immature : il présente un large éventail granulométrique et présente une matrice*
-                                    abondante et un classement faible et les grains sont anguleux et une porosité et une perméabilité élevé et il reflète des actions hydrodynamiques brutales faibles et brèves, et ils sont propres à certains milieux fluviatiles,
-                                    glaciaires et de re-sédimentation marine.
-                                    <small>* Matrice : est un ciment primaire, elle peut venir avec les grains détritiques ou provenir de leurs usures, elle peut être de nature variée. Au plan textural, on parle de grès flottant qu’on observe sur le microscope</small>
-                                </p>
-                                <h3>Grès</h3>
-                                <p>
-                                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThirteen">
-                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"> 3. Roches sédimentaires carbonatées </a></h4>
-                        </div>
-                        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-                            <div class="panel-body">
-                                <h3>Calcaires</h3>
-                                <h3>Dolomies</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="row">
-            <div class="col-sm-offset-1 col-sm-4 col-xs-6 text-center">Pour mater le projet, visitez le repository sur <a href="https://github.com/geotechdev/fstgat_gag" target="_blank"><i class="fab fa-github"></i> Github</a>, ou pour signaler un problème, envoyez un email sur l'adresse suivante
-                <a><i class="fas fa-at"></i> aitabdelmalekma@gmail.com</a>. Merci pour votre visite !</div>
-            <div class="col-sm-7 col-xs-6 text-center">Tous droits réservés <i class="far fa-copyright"></i> 2018, FSTGAT_GAG</div>
-        </footer>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../rns.2.cours.html">Cours</a></li>
+          <li class="active">Pétrographie</li>
+        </ol>
+      </div>
     </div>
-    <!--js libraries and bootstrap js cdn-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- compiled and minified js for bootstrap 3.3.7 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-8 col-md-offset-2 col-md-9 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Cours: Pétrographie</h3>
+            <h4>Pour les étudiants de la géologie</h4>
+            <h5>Sommaire du cours</h5>
+          </div>
+          <div class="panel-body">
+            <div class="list-group">
+              <a href="#ch1" class="list-group-item"><em>Chapitre 1: </em>Introduction</a>
+              <a href="#ch2" class="list-group-item"><em>Chapitre 2: </em>Pétrographie magmatique</a>
+              <a href="#ch3" class="list-group-item"><em>Chapitre 3: </em>Pétrographie métamorphique</a>
+              <a href="#ch4" class="list-group-item"><em>Chapitre 4: </em>Pétrographie sédimentaire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch1">
+        <h2>Chapitre 1: Introduction</h2>
+      </div>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 1. Notions de pétrographie </a></h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <p>
+                  La <strong>pétrographie</strong>, au sens large, est la science des roches : leur description (pétrographie au sens strict), leur classification et l'interprétation de leur genèse (Foucault & Raoult, 1995). La pétrographie s'appuie sur
+                  les sciences géologiques comme la minéralogie, la lithologie, la stratigraphie, la géodésie et la paléontologie. Il est à noter que le terme 'pétrographie', est de plus en plus remplacé par le terme 'pétrologie'.
+                </p>
+                <p>
+                  La <strong>roche</strong> est un matériau constitutif de l'écorce terrestre, formé en général d'un assemblage de minéraux (solide, liquide et gazeux). En géologie, la notion de roche comprend donc tous les types de matériaux constituant
+                  l'écorce terrestre, y compris les sols meubles.<br />Le pétrographe, outre l'étude de la composition minéralogique des roches, essaie de reconstituer l'histoire de la Terre dont les roches sont les témoins. L'étude des roches a permis
+                  d'apprendre et de comprendre beaucoup d'aspects : de géographie et des climats du passé, de composition interne de notre planète et des conditions qui y règnent, des formations des continents et leur mouvement, de l'évolution des espèces
+                  végétales et animales, en particulier celle de l'homme.
+                </p>
+                <h3>Les trois grands groupes de roches et leur cycle évolutif</h3>
+                <p>
+                  En pétrographie, la classification fondamentale est basée sur l'<em>origine</em> des roches et leur <em>processus de formation</em> (appelé <em>genèse</em>). On peut aussi classer les roches en trois grands groupes :
+                </p>
+                <ul>
+                  <li>
+                    Les <strong>roches magmatiques</strong> (encore appelé roches ignées) : qui résultent du refroidissement et de la consolidation de bains silicatés en fusion, appelés <strong>magma</strong>. Ce refroidissement se fait soit à la surface
+                    de la Terre (cas des roches volacaniques), soit au sein de l'écorce terrestre (cas des roches plutoniques).
+                  </li>
+                  <li>
+                    Les <strong>roches métamorphiques</strong> qui sont formées à partir de roches préexistantes essentiellement par recristallisation due à des élévations de température et de pression.
+                  </li>
+                  <li>
+                    Les <strong>roches sédimentaires</strong> qui se forment à partir de la désintégration (altération) d'autres roches à la surface de la Terre ou dans l'eau, soit à partir de la précipitation chimique ou biochimique de solutions.
+                  </li>
+                </ul>
+                <p>
+                  Les roches proviennent toutes à l'origine du magma en fusion et subissent une évolution dans le temps. Ainsi, par exemple, une roche sédimentaire peut être le produit de l'altération de roches métamorphiques, elles-mêmes étant le produit du métamorphisme
+                  de roches, soit magmatiques, soit sédimentaires, soit métamorphiques. Les relations et le cycle d'évolution des trois grands groupes de roches sont représentés sur <a href="https://fr.wikipedia.org/wiki/Cycle_g%C3%A9ologique#/media/File:Cycle_g%C3%A9ologique.png"
+                    target="_blank">ce schéma</a>.
+                </p>
+                <p>
+                  Les proportions respectives des trois groupes de roches au sein de la croûte terrestre (Ronov & Yaroshevsky, 1969) sont :
+                </p>
+                <ul>
+                  <li>
+                    Roches magmatiques : proportions volumiques au sein de la croûte terrestre 65% ;
+                    <ul>
+                      <li>
+                        Granodiorites : 10% ;
+                      </li>
+                      <li>
+                        Diorites : 11% ;
+                      </li>
+                      <li>
+                        Basaltes : 43% ;
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Roches sédimentaires : proportions volumiques au sein de la croûte terrestre 8% ;
+                  </li>
+                  <li>
+                    Roches métamorphiques : proportions volumiques au sein de la croûte terrestre 27% ;
+                  </li>
+                </ul>
+                <p>
+                  Si les roches ignées (ou magmatiques) sont de loin les plus nombreuses, elles sont généralement recouvertes par des roches sédimentaires, que ce soit sur les fonds océaniques ou sur les continents. Mis à part les reliefs, les roches sédimentaires forment
+                  donc la "pellicule" de surface de la croûte terrestre, principale partie de la terre concernée par les travaux de l'ingénieur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 2. Méthodes d'étude </a></h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <p>
+                  Les méthodes d'observation et d'étude sont les mêmes à peu de chose près quel que soit le type de roche étudiée, même si la façon de les appliquéer peut différer pour chaque cas.
+                </p>
+                <ul>
+                  <li>
+                    <em>Méthodes de terrains</em> : L'étude de terrain est essentielle en pétrographie, comme dans toutes les branches de la géologie. L'étude de terrain comprend l'observation et la cartographie des gisements des différents faciès (types
+                    de roches) avec leur forme, contacts et aspects de leurs déformations (l'outil de base est la carte topographique sur laquelle est reportée la toponymie). Sur le terrain l'observation à l'oeuil nu ou à la loupe des propriétés minéralogiques
+                    et physiques (dureté, couleur et réaction aux acides) des minéraux et la texture des roches.
+                  </li>
+                  <li>
+                    <em>Au laboratoire</em> :
+                    <ul>
+                      <li>
+                        <em>Méthodes optiques</em> : La détermination de la roche va être précisée tout d'abord à l'aide d'un moyen optique plus puissant que l'oeuil ou la loupe : le microscope polarisant.<br />En 1829, avec l'invention du prisme de calcite
+                        qui polarise la lumière par William Nicols, le microscope biologique est transformé en microscope polarisant. Ce type de microscope fut adapté pour l'étude des roches à partir de 1850, lorsque l'anglais Sorby mit au point la technique
+                        de confection des lames minces. Dans la lame mince, presque tous les minéraux y sont transparents et on peut déterminer les minéraux grâce à leurs propriétés optiques et donc par la suite, déterminer la roche. Pour les minéraux
+                        opaques, on utilise un microscope polarisant spécial, qui utilise la réflexion de la lumière sur une surface polie de roche (microscope métallographique).
+                      </li>
+                      <li>
+                        <em>Méthodes chimiques</em> : Après broyage de la roche et mise en solution, on détermine la composition chimique : on dose les différents constituants qui sont donnés sous forme d'oxydes (constituants essentiels sont : O, Si,
+                        Al et Fe ; les constituants moindres sont : Ca, K, Mg et Na et les constituants en très petite proportion sont Ti, P et Mn).<br />Ex: SiO<sub>2</sub>, Al<sub>2</sub>O<sub>3</sub>, TiO<sub>2</sub>, Na<sub>2</sub>O, CaO, K<sub>2</sub>O,
+                        MgO, ect.) Et PF (perte au feu ou teneur en eau .. on ne dose pas réellement l'oxygène).<br />L'ensemble des éléments cités représente prés de 96% de la roche. Tous les autres éléments qui existent en très petite quantité sont
+                        exprimés en ppm (partie par million).<br />Actuellement on utilise des procédés bien plus rapides comme la "microchimie" qui est qualitative (non quantitative) qui permet de déterminer la présence de certains éléments dans une
+                        petite quantité de matière.
+                      </li>
+                      <li>
+                        <em>Méthodes physico-chimiques</em> : On utilise également des procédés 'physico-chimique' pour obtenir rapidement la composition chimique de la roche. L'emploi des RX permet l'identification plus précise des minéraux que le microscope
+                        (pour une analyse aux RX, il faut une séparation minérale, broyage. Une fois l'échantillon broyé, il est passé à la diffraction).<br />Par spectrométrie X et par fluorescence X, on fait également des analyses quantitatives très
+                        rapides et l'analyse par spectrographie d'émission (notamment pour le dosage des éléments en traces donc les proportions sont inférieures à 0.1%).<br />Pour déterminer certains argiles, on étudie leurs variations en fonction de
+                        la température (analyse thermique pondérale). On peut également étudier la quantité de chaleur absorbée ou libérée par les modifications subies à certaines températures (analyse thermique diférentielle).<br />L'analyse à la microsonde
+                        électronique qui utilise le rayonnement X émis par les atomes excités par le flux d'élctrons, permet l'analyse quantitative des principaux éléments contenus dans 1 micron cube de matière.
+                        <br />Le spectromètre de masse permet de séparer et doser les divers isotopes d'un même élément (c'est-à-dire des éléments qui ne diffèrent que par la masse du noyau, mais figurent à la même case du tableau de Mendeleïev, ex: U,C,K,Rb)
+                        d'où l'utilisation pour les études géochronologiques.<br />Le microscope électronique est de plus en plus utilisé pour l'étude des argiles, ainsi pour l'étude et disposition des inclusions ultramicroscopiques des critaux.
+                      </li>
+                      <li>
+                        <em>Séparation magnétique</em> : Cette méthode est souvent utilisée pour la séparation des minéraux.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch2">
+        <h2>Chapitre 2: Pétrographie magmatique</h2>
+      </div>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFourteen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen"> 1. Introduction </a></h4>
+            </div>
+            <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+              <div class="panel-body">
+                <p>
+                  Les roches magmatiques (ignées ou éruptives) proviennent de la cristallisation suite au refroidissement et solidification d'un magma. Un magma est une matièe fondue comme la lave. C'est un mélange dans lequel, la phase liquide domine. C'est un système
+                  chimique multi composé avec une phase liquide et un certain nombre de phases solides(minéraux) et de phases gazeuses (H<sub>2</sub>O, CO<sub>2</sub>, HCl, SO<sub>2</sub>, ect). La cristallisation du magma peut être
+                  compllète ou incomplète, et peut se produire soit en profondeur, et on parle de roches magmatiques plutoniques (ou intrusives) ; ou à la surface, ce sont les roches volcaniques (ou extrusives ou effusives).
+                </p>
+                <p>
+                  La viscosité d'un magma dépend de sa température
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 2. Les minéraux des roches magmatiques </a></h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 3. Cristallisation des magmas </a></h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> 4. Origine des magmas </a></h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSix">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> 5. Classification des roches magmatiques - gisement </a></h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSeven">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> 6. Classification des roches magmatiques - texture </a></h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingEight">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> 7. Classification des roches magmatiques - composition minéralogique </a></h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingNine">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"> 8. Classification des roches magmatiques - composition chimique </a></h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"> 9. Les séries magmatiques </a></h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+              <div class="panel-body">xxx</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch3">
+        <h2>Chapitre 3: Pétrographie métamorphique</h2>
+      </div>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFifteen">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen"> 1. Introduction </a></h4>
+            </div>
+            <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+              <div class="panel-body">
+                <p>
+                  La Terre est une planète géologiquement active. Très peu de terrains sont restés intacts depuis leurs formations. Ils subissent l'influence des phénomènes géologiques ultérieurs à leurs mises en place. Lors de cette remobilisation, les roches vont être
+                  déformées, enfouies, transformées. C'est le métamorphisme.<br />Il a lieu en profondeur, dans les entrailles de la Terre. N'importe quelle roche peut être métamorphisée. Ce peut être une roche sédimentaire, magmatique
+                  ou même une roche métamorphique déjà existante. Selon la nature de la roche de départ on distingue :<br />
+                  <ul>
+                    <li>
+                      le para-métamorphisme : c'est une roche sédimentaire qui est métamorphisée ;
+                    </li>
+                    <li>
+                      l'ortho-métamorphisme : c'est une roche magmatique qui est métamorphisée ;
+                    </li>
+                    <li>
+                      le poly-métamorphisme : c'est une roche métamorphique qui est métamorphisée.
+                    </li>
+                  </ul>
+                  Ces roches métamorphiques sont donc formées à partir de roches préexistantes, comme l’origine du mot métamorphique le rappelle (en grec meta signifie après, et morphosis la forme). Le métamorphisme peut être isochimique (sans modification de la composition
+                  chimique) ou allochimique (avec modification de la composition chimique).<br /> Plus on s'enfonce sous terre, plus la température ambiante augmente. En moyenne l'augmentation est de 3°C tous les 100 mètres, c'est le
+                  gradient géothermique moyen. De même la pression augmente avec la profondeur. Si à la surface une température de 1000°C suffit à la fusion de la plupart des roches, en profondeur, cette valeur sera bien plus importante. En effet la pression
+                  va s'opposer à la fusion.<br /> Quand une roche s'enfonce, elle subit d'abord les phénomènes de la diagénèse, puis au fur et à mesure que la température et la pression augmente, des réarrangements ioniques viennent perturber la structure
+                  de certains minéraux. Il y a alors métamorphisme.<br /> Dans tous les cas, les roches métamorphisées restent à l’état solide durant le processus de métamorphisme qui se produit sans fusion, uniquement par recristallisation. Le métamorphisme
+                  correspond à l'intervalle existant entre la diagenèse des sédiments (faible température et faible pression) et la fusion des roches (par anatexie). La transition entre diagenèse et métamorphisme est appelé Anchimétamorphisme.<br /> Ainsi
+                  le métamorphisme ne concerne que des roches solides. Malgré les transformations minéralogiques et structurales que subit la roche, celle-ci reste toujours à l'état solide. Des apports de liquide extérieur peuvent toutefois avoir lieu,
+                  entraînant la modification de la composition chimique de la roche par métasomatose.
+                </p>
+                <blockquote>
+                  <p>
+                    Le métamorphisme est l'ensemble des processus qui induisent des modifications minéralogiques et texturales d'une roche, à l'état solide et sous l'effet de la température, de la pression et des fluides.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSixteen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen"> 2. Les conditions et les facteurs du métamorphisme </a></h4>
+            </div>
+            <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+              <div class="panel-body">
+                <h3>Les conditions du métamorphisme - Les types de métamorphisme</h3>
+                <p>
+                  Le métamorphisme s'étend d'environ 200°C (limite entre diagenèse et métamorphisme) et la limite de fusion des roches (l'anatexie). La limite supérieure est variable selon la teneur en eau de la roche (limites 1 et 2 du diagramme ci-dessous).
+                </p>
+                <ul>
+                  <li>
+                    On distingue le <strong>dynamo-métamorphisme</strong> (métamorphisme d’impact) qui est dû à l'effet de la pression (roches intensément déformées avec relativement peu de néoformations de minéraux. Il s'agit de roches telles que les
+                    cataclasites ou les roches formées lors d’impacts de météorite. On y retrouve une forme de silice de très haute pression, la coésite, ainsi que des phases vitreuses montrant une fusion.
+                  </li>
+                  <li>
+                    Le <strong>métamorphisme de contact</strong> est dû essentiellement à l'effet de la température. Il se développe dans les roches encaissantes autour des masses magmatiques chaudes en poussant les terrains déjà en place. C'est la chaleur
+                    du magma qui est responsable de la transformation des roches qui l'entourent. La zone métamorphisée est réduite et dessine une auréole de métamorphisme autour du magma refroidi.
+                  </li>
+                  <li>
+                    Entre les deux se développe le <strong>métamorphisme régional</strong>, qui est lié à des facteurs géodynamiques. La principale cause de ce type de métamorphisme est d'origine tectonique. C'est pourquoi les minéraux de ces roches métamorphiques
+                    sont souvent aplatis et orientés le long des plans de foliation.
+                  </li>
+                  <li>
+                    Il existe aussi le <strong>métamorphisme hydrothermal</strong>, qui apparaît lorsque des sources d’eau chaude (les geysers, par exemple) réchauffent les roches en contact. Ce type de métamorphisme est très peu fréquent.
+                  </li>
+                </ul>
+                <h3>Les facteurs du métamorphisme</h3>
+                <p>
+                  Les principaux sont la température et la pression, mais il en existe d'autres qu'il ne faut pas négliger.
+                </p>
+                <ol>
+                  <li>
+                    <strong>Température</strong> : Une augmentation de température se traduit par une perte d'eau. Cette augmentation a plusieurs origines, elle peut avoir lieu :
+                    <ul>
+                      <li>
+                        par enfouissement : l'augmentation se fait selon le gradient géothermique (3°C /100m), mais il existe des variations selon les zones : les cratons, régions peu actives du globe, appelées aussi boucliers, ont un gradient faible (1°C /100m), les zones actives
+                        ont au contraire un gradient élevé (10°C /100m), de même que les zones montagneuses fraîchement érodées où, par équilibre isostatique, le gradient géothermique s'est élevé.
+                      </li>
+                      <li>
+                        par friction : dans les zones de subduction, l'enfoncement d'une plaque froide entraîne une chute des isothermes au niveau de la fosse océanique puis leurs remontées rapides. L'échauffement provoque la libération d'eau par la croûte subduite.<br
+                        />Pour les autres phénomènes tectoniques (chevauchement, nappe, décrochement), c'est uniquement les zones en contact qui sont affectées.<br />En ce qui concerne les obduction où c'est une croûte jeune et chaude qui recouvre une
+                        croûte froide, le métamorphisme est rétrograde (l'intensité décroît avec la profondeur).
+                      </li>
+                      <li>
+                        par intrusion magmatique : c'est le cas des métamorphismes de contact.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Pression</strong> : L'augmentation de pression peut avoir différentes origines :
+                    <ul>
+                      <li>
+                        <em>lithostatique</em> : elle est due au poids des roches accumulées par subsidence sédimentaire, par subduction ou par chevauchement et charriage. Elle entraîne une compaction et la diagenèse. La pression lithostatique des sédiments
+                        (2,5 kilos pour une colonne de 10 m sur 1cm2) ainsi que des phénomènes tectoniques permet l'enfoncement des roches dans la croûte.
+                      </li>
+                      <li>
+                        <em>hydrostatique</em> : C'est la pression des fluides (CO2, H2O). Elle intervient surtout lors de leur libération.
+                      </li>
+                      <li>
+                        <em>pression de contrainte</em> : Ce sont les pressions orientées par des phénomènes tectoniques.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Facteurs chimiques</strong> : Généralement le métamorphisme est isochimique : les minéraux qui apparaissent se forment à partir de la même composition de ceux de la roche d'origine (on ne tient pas compte des pertes de fluides).
+                    Les roches formées de cette façon sont appelées ectinites.<br />// En cas de métasomatose (remplacement d'éléments par d'autres), c'est le plus souvent l'eau et le CO2 qui interviennent.
+                  </li>
+                  <li>
+                    <strong>Facteurs déclenchants</strong> : Le métamorphisme n'est pas uniforme dans une roche, certaines zones peuvent ne pas le subir (elles permettent d'ailleurs de servir de témoins). En effet les minéraux restent en équilibre métastable
+                    tout au long du métamorphisme et seules les zones où il y a eu déstabilisation se sont transformées. Pour des métamorphismes faibles, de basse température, une déformation suffit à la déstabilisation, pour un métamorphisme de haute
+                    température les roches ne sont conservées dans leur état d'origine que s’il n'y a pas de fluides.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSeventeen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen"> 3. Structure et réaction minéralogique des roches métamorphiques </a></h4>
+            </div>
+            <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+              <div class="panel-body">
+                <h3>La nature de la roche initiale</h3>
+                <p>
+                  La roche initiale est appelée protolithe; elle peut être d'origine sédimentaire (roche paradérivée) ou ignée (roche orthodérivée). Lorsqu'il n'existe plus aucune indication de la nature de la roche initiale, il est parfois possible de l'identifier à partir
+                  de la composition chimique globale de la roche (à condition que les modifications chimiques ne soient pas trop importantes, voir infra).
+                </p>
+                <h3>Structure des roches métamorphiques</h3>
+                <p>
+                  Les roches métamorphiques subissent souvent des déformations. Ces contraintes entraînent l'apparition de structures particulières dans la roche. On peut en distinguer 3 types qui se succèdent avec l'intensité du métamorphisme :
+                </p>
+                <ul>
+                  <li>
+                    Une <strong>stratification</strong> qui est issue des phénomènes de sédimentation. Elle est perpendiculaire aux forces en jeu (pression lithostatique). Elle concerne le débit de la roche.
+                  </li>
+                  <li>
+                    Une <strong>schistosité</strong> où la roche se débite en feuillets de même composition minéralogique. Cette disposition apparait à partir de 5 km de profondeur. Elle peut apparaître lors de la diagenèse (pression lithostatique) mais
+                    elle est souvent à relier aux contraintes tectoniques. Le plus souvent la schistosité est perpendiculaire ou oblique aux forces en jeu.
+                  </li>
+                  <li>
+                    Une <strong>foliation</strong> où certains minéraux de la roche se transforment. Les nouveaux minéraux qui apparaissent s'aplatissent et s'orientent selon la direction de la schistosité. Ils peuvent se regrouper sous forme de lit.
+                    Le front de foliation serait situé vers 10 Km de profondeur. (Micaschistes, gneiss).
+                  </li>
+                </ul>
+                <p>
+                  Au cours du métamorphisme, une même roche subis des modifications minéralogiques. Certains minéraux apparaissent, d'autres disparaissent. Or les minéraux n'apparaissent que dans certaines conditions de températures et de pressions, ce que l'on appelle
+                  leur domaine de stabilité. Pour éviter des erreurs d'interprétations en n'étudiant qu'un seul minéral, on a défini des paragénèses. En fait on observe non pas un minéral, mais une association de minéral, ou paragénèse.
+                </p>
+                <h3>Les modifications dues au métamorphisme</h3>
+                <ul>
+                  <li>
+                    <strong>Modifications texturales</strong> : Elles se manifestent par l'apparition de textures orientées (schistosité ou clivage, textures lépidoblastique ou nématoblastique) ou non (texture granoblastique) ou d'alternance de lits de
+                    minéralogie différente (foliation).
+                  </li>
+                  <li>
+                    <strong>Modifications chimiques (métasomatisme)</strong> : Elles s'expriment par une modification de la chimie globale de la roche. Ces modifications sont souvent dues à des apports ou des départs par les fluides.
+                  </li>
+                  <li>
+                    <strong>Modifications minéralogiques</strong>.
+                  </li>
+                </ul>
+                <h3>Réaction minéralogique, paragénèse et assemblage</h3>
+                <p>
+                  Les minéraux stables dans la roche initiale subissent des réactions chimiques qui font apparaître de nouvelles associations de minéraux, appelées paragénèses
+                </p>
+                <div class="well">
+                  Ex : <code>Muscovite + Quartz => Feldspath potassique + Andalousite + H<sub>2</sub>O </code>
+                </div>
+                <p>
+                  Cette réaction est une réaction de déstabilisation de la muscovite en présence de quartz et d'apparition de feldspath potassique et d'andalousite (ainsi que de l'eau).<br />L'ancienne paragénèse est donc : muscovite + quartz ; la nouvelle
+                  paragénèse est feldspath potassique et andalousite. La réaction se développe jusqu'à épuisement de l'un des minéraux réactants (muscovite ou quartz ; en général le quartz est plus abondant). A la fin, on se retrouve donc avec comme minéraux
+                  : feldspath potassique, andalousite (formés lors de la réaction) et quartz (en excès) ; l'ensemble de ces minéraux forme un assemblage (différent de la paragénèse, puisqu'il comprend aussi les minéraux en excès).<br />Les transformations
+                  polymorphiques sont des modifications de la structure d'un minéral sans changement de sa composition minéralogique : c'est le cas des silicates d'alumine de formule générale SiAl<sub>2</sub>O<sub>5</sub> (andalousite, disthène, sillimanite).
+                </p>
+                <p>
+                  Dans la réaction traitée précédemment (Muscovite + quartz -> feldspath potassique + andalousite + H<sub>2</sub>O), apparaît le constituant H<sub>2</sub>O, qui fait partie de la phase fluide (réaction de déshydratation). L'eau formée
+                  est un élément important dans le métamorphisme car :
+                  <ul>
+                    <li>
+                      elle est un vecteur de chaleur ;
+                    </li>
+                    <li>
+                      elle est un vecteur de matière ;
+                    </li>
+                    <li>
+                      elle diminue le point de fusion des roches qui peuvent atteindre plus tôt l'état fondu (anatexie).
+                    </li>
+                  </ul>
+                  Les fluides anciens dans les roches métamorphiques peuvent être caractérisés par l'étude des inclusions fluides. Il s'agit de microcavités (&lt; 10 - 50 µm) des minéraux ayant piégé un petit volume de fluide présent dans la roche.
+                </p>
+                <h3>Isograde</h3>
+                <p>
+                  Sur le terrain, il est possible de "suivre" la réaction chimique. On observe d'abord des roches présentant la paragénèse muscovite + quartz ; puis, on observe des roches sans muscovite, mais avec feldspath potassique et andalousite. On a alors passé la
+                  limite des roches avec muscovite et des roches sans muscovite. On appelle <strong>isograde</strong> cette limite sur le terrain. On appelle isograde moins (-), un isograde de disparition d'un minéral et isograde plus
+                  (+) un isograde d'apparition d'un minéral.<br />Dans l'exemple ci-dessus, l'isograde Mu(-) correspond à l'isograde FK(+) et And(+).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingEighteen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen"> 4. Zones, faciès et climats métamorphiques </a></h4>
+            </div>
+            <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
+              <div class="panel-body">
+                <h3>Les zones métamorphiques</h3>
+                <h3>Les faciès métamorphiques</h3>
+                <h3>Les gradients métamorphiques</h3>
+                <h3>Les climats métamorphiques</h3>
+                <h3>Les séquences métamorphiques</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10 col-xs-12 col-md-offset-2 col-md-8 page-header" id="ch4">
+        <h2>Chapitre 4: Pétrographie sédimentaire</h2>
+      </div>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingEleven">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"> 1. Introduction </a></h4>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+              <div class="panel-body">
+                <p>
+                  La pétrographie sédimentaire désigne la description des différents types de roches sédimentaires. C’est une branche des sciences géologiques.
+                </p>
+                <p>
+                  <em>Le sédiment</em> est un ensemble de particule de taille variable ou de matière précipité d’origine chimique ayant subis ou pas un transport. On étudie les roches sédimentaires parce qu’elles constituent 5% de la croûte terrestre,
+                  et elles recouvrent 75% de la surface terrestre.
+                </p>
+                <p>
+                  <em>Altération</em> constitue l’essentiel des mécanismes qui libèrent des particules de roches et soustraient les éléments dissous à la surface du globe, avant qu’interviennent les processus d’érosion, de transport et de sédimentation.
+                </p>
+                <p>
+                  <em>Erosion / altération physique</em> associée à l’altération, elle prédomine dans les régions ou nous avons de grandes variations de température et d’humidité, elle s’opère par cristallisation de l’eau ou de sel dans les fractures
+                  ou les pores. Elle représente le point de départ du transport particulaire, ses agents sont très variés et sont représentés par le vent, pluie et ruissellements, glace, eau continentale, eau marine (vagues, marées, houles), topographie,
+                  durée de l’exposition, action des organismes biologiques.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwelve">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"> 2. Roches sédimentaires détritiques </a></h4>
+            </div>
+            <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+              <div class="panel-body">
+                <h3>Conglométats</h3>
+                <p>
+                  On parle de conglomérats quand la roche sédimentaire contient au moins 50% des éléments dont la taille est supérieure à 2mm. Les conglomérats impliquent une signification tectonique. Le ciment* par sa nature et son contenu fossilifère renseigne sur le
+                  milieu définitif du dépôt. Les conglomérats se placent généralement à la limite des cycles géologiques.<br />
+                  <small>* Ciment : est une précipitation secondaire chimique ou diagenétique.</small>
+                </p>
+                <h3>Brèches</h3>
+                <p>
+                  On parle de brèches, quand 50% des éléments étant anguleux. Le milieu générateur intervient comme moyen matériel de classification :<br /> Brèche sédimentaire : cette famille est caractérisée par un ciment engendré indépendamment des
+                  éléments, il est lui-même un sédiment (ciment) qui peut être fossilifère ou non
+                </p>
+                <ol>
+                  <li>
+                    <em>Brèche subaérienne</em> : elle résulte de l’action des agents atmosphériques responsables de la fragmentation des roches, notamment le gel et le dégel dans un climat froid.
+                    <ul>
+                      <li>
+                        <em>Brèches de pente</em> : ce sont des éboulis cimentés parmi lesquels des blocs où la glace joue par endroit un rôle important, ces brèches sont caractérisées par une forte hétérométrie.
+                      </li>
+                      <li>
+                        <em>Brèches de torrents</em> : ce sont des brèches qui s’accumulent aux fonds des oueds, on les retrouve généralement dans les climats arides.
+                      </li>
+                      <li>
+                        <em>Brèches des cavernes</em> : nous les retrouvant dans les cavités sous-terraine dû aux phénomènes karstiques, par dissolution et effondrement chaotiques dû aux eaux d’infiltration.
+                      </li>
+                      <li>
+                        <em>Brèches glaciers</em> : (tillites) la fragmentation est dû au mouvement de la masse glaciaire, elles sont caractérisées par une forte hétérométrie.
+                      </li>
+                      <li>
+                        <em>Brèches météoriques</em> : en climat désertique, les éléments arrachés par la différence de température peuvent être cimentés par l’évaporation des eaux interstitielles.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <em>Brèches subaquatiques</em> : ce sont des brèches qui se forment aux milieux marins. Nous pouvons distinguer plusieurs types :
+                  </li>
+                  <li>
+                    <em>Brèche tectonique</em> : elles accompagnent des zones de grande fracturation notamment les diaclases et les failles. Elles peuvent être monogéniques ou polygéniques.
+                    <ul>
+                      <li>
+                        <em>Brèches de pente sous-marine</em> : Elles ressemblent à celles formées au milieu continental (aérien) ; cependant, elles caractérisées par une inter-stratification et la présence de fossiles marins dans le ciment. Elles sont
+                        liées au glissement des sédiments sur le talus continental.
+                      </li>
+                      <li>
+                        <em>Brèches récifales</em> : elles sont caractéristiques par la cimentation des fragments arrachées aux coraux par les vagues.
+                      </li>
+                      <li>
+                        <em>Brèches ossifères</em> : généralement phosphatées, elles proviennent et soulignent des niveaux bécatombes (mort massive).
+                      </li>
+                      <li>
+                        <em>Brèches intra-formationnelles</em> : elles sont monogéniques, et elles résultent de la fragmentation des couches sédimentaires partiellement consolidées.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <em>Brèche volcanique</em> : elles sont constituées de produits volcaniques solides, déposées au milieu aérien ou aquatique. Elles sont dû d’explosion volcanique ou d’effusion (écoulement).
+                  </li>
+                  <li>
+                    <em>Brèche physico-chimique</em> : liées aux phénomènes d’intrusion, d’éclatement, de dessiccation, de recristallisation.
+                  </li>
+                </ol>
+                <h3>Poudings</h3>
+                <p>
+                  On parle de poudings quand 50% des étant arrondis. De manière générale, l’étude des conglomérats prend compte plusieurs paramètres :
+                </p>
+                <ol>
+                  <li>
+                    Forme (Brèche, Pouding) et renseigne sur le transport ;
+                  </li>
+                  <li>
+                    Nature (monogénique ou polygénique) et renseigne sur l’évolution orogénique des provinces nourricières ;
+                  </li>
+                  <li>
+                    Distribution granulométrique (monomérique ou hétérométrique) et renseigne sur l’hydrodynamisme du milieu ;
+                  </li>
+                  <li>
+                    Nature du ciment/matrice : (argileux, gréseux, carbonaté,…) et renseigne sur le milieu de dépôt et de la diagénèse ;
+                  </li>
+                  <li>
+                    Texture : c’est la disposition jointive ou non des éléments, orientation des éléments et nous renseigne sur l’hydrodynamisme/transport.
+                  </li>
+                </ol>
+                <p>
+                  Les conglomérats sont étudiés par des méthodes quantitatives et qualitatives.<br /> La méthode quantitative développée par Ritcher Fuchtbaur en 1980 repose sur la nature des éléments, le liant et la structure du corps sédimentaires.
+                  Nous indiquons l’âge, la taille, l’émoussé, le stade de lithification, ajustement entre les éléments, texture.<br /> Sédiment immature : il présente un large éventail granulométrique et présente une matrice* abondante et un classement
+                  faible et les grains sont anguleux et une porosité et une perméabilité élevé et il reflète des actions hydrodynamiques brutales faibles et brèves, et ils sont propres à certains milieux fluviatiles, glaciaires et de re-sédimentation
+                  marine.
+                  <small>* Matrice : est un ciment primaire, elle peut venir avec les grains détritiques ou provenir de leurs usures, elle peut être de nature variée. Au plan textural, on parle de grès flottant qu’on observe sur le microscope</small>
+                </p>
+                <h3>Grès</h3>
+                <p>
+                  Les grès proviennent de la consolidation des sables avec au moins 50% de silice/quartz. Et ils sont constitués de 2 phases :
+                </p>
+                <ol>
+                  <li>
+                    <strong>Phase granulaire</strong> (Petit John, 1929)<br />
+                    <ul>
+                      <li>
+                        Constitué uniquement de quartz : <em>Grès siliceux</em> ;
+                      </li>
+                      <li>
+                        Quartz + Feldspath A. : { (Fk &ge; 25% : <em>Arkose</em>) ; (Fk &lt; 25% : <em>Grès feldspathique</em>) } ;
+                      </li>
+                      <li>
+                        Qz + Fk + Micas : { (micas en lits orientés = 30% : <em>Psamite</em>) ; (micas en positions quelconque &lt; 30% : <em>Grès micacé</em>) }
+                      </li>
+                      <li>
+                        …+Fragments rocheux : (volcanique) <em>Grauwake</em>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Phase de liaison</strong> : On met le nom du grès et on ajoute la nature de la phase de liaisons (siliceuse, argileuse, carbonatée, ferrugineuse…, évaporitique).<br />[<em>Exception :</em> Grès siliceux (phase de liaison siliceuse
+                    – détritique)]<br />
+                    <ul>
+                      <li>
+                        Si la silice est primaire : <em>Grès quartzeux/Grès à ciment de quartz</em> ;
+                      </li>
+                      <li>
+                        Si la silice est secondaire : auréole de nourrissage
+                        <ul>
+                          <li>
+                            Nourrissage de la totalité des grès : <em>Quartzite</em>
+                          </li>
+                          <li>
+                            Nourrissage de la majorité des grès : <em>Quartzite gréseux</em>
+                          </li>
+                          <li>
+                            Nourrissage de quelques grains : <em>Grès quartzite</em>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <p>
+                      <small>* Matrice : est un ciment primaire, elle peut venir avec les grains détritiques ou provenir de leurs usures, elle peut être de nature variée. Au plan textural, on parle de grès flottant qu’on observe sur le microscope ;<br />* Orthoquartzite : pour les quartzites d’origine sédimentaire ;<br />* Métaquartzite : pour les quartzites d’origine métamorphique.</small>
+                    </p>
+                  </li>
+                </ol>
+                <ol>
+                  <li>
+                    <strong>Classification des grès :</strong><br />
+                    <ul>
+                      <li>
+                        <strong>Classification de Folk (1952) :</strong>
+                        <ul>
+                          <li>
+                            Grès immature : matrice abondante ; grains mal-triés et anguleux
+                          </li>
+                          <li>
+                            Grès sub-mature : 5% de matrice ; grains anguleux et assez bien triés
+                          </li>
+                          <li>
+                            Grès mature : Matrice nulle ; bon triage et des grains fortement usés
+                          </li>
+                          <li>
+                            Grès supermature : matrice nulle ; très bon triage et des grains fortement usés
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>Classification de Dolt (1964) :</strong> Cette classification est basée sur la composition minéralogique + pourcentage de la matrice, ceci conduit à la définition de 3 grandes classes : <em>Arénites</em> ; <em>Wackes (Granwake)</em>                        ; <em>Mudstones (Argilites)</em>.<br />Cette classification ne tient pas compte des donnés du terrain (structure sédimentaire, géométrie des corps gréseux, faciès associés) et elle ne tient pas compte aussi des autres grains et
+                        d’autres constituants (Qz, Fk et fragments rocheux).
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Stades de formation des grès :</strong> La transformation des sables poreux en grès compact s’effectue par étapes successives en grande partie lié au gradient thermodynamique d’enfouissement.
+                    <ol>
+                      <li>
+                        <em>Stade rédomorphique</em> : les processus d’oxydo-réduction5 prédominent et déterminent la couleur du grès
+                      </li>
+                      <li>
+                        <em>Stade locomorphique</em> : durant ce stade, souvent la cimentation siliceuse ou argileuse
+                      </li>
+                      <li>
+                        <em>Stade polymorphique</em> : durant ce stade, nous avons le développement des argiles et des micas, ce stade marque la diagénèse profonde et le passage vers le métamorphisme.
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <strong>Phénomènes de transformation :</strong> Les phénomènes superficiels : les sables déposés sous le climat arides sont souvent immatures, très poreux et demeurent aux milieux superficiels durant longtemps oxygénés et eau vadose
+                    avant d’être enfuis, 3 modifications précoces peuvent survenir : Infiltration des argiles détritiques entre les grains de sable à faveur de recouvrement (des épandages aluviots) par des eaux chargées en suspension et l’en résulte des
+                    films de particules d’argiles autour des grains et qui donnent à la roche un aspect de "debris flow" riche en matrice.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThirteen">
+              <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"> 3. Roches sédimentaires carbonatées </a></h4>
+            </div>
+            <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+              <div class="panel-body">
+                <p>
+                  Les roches carbonatées (RC) sont plus diversifiées que les roches détritiques.<br />Tous les constituants des roches carbonatées se forment dans les milieux de dépôt, contrairement à ceux des roches détritiques. Leur reconnaissance permet
+                  donc de reconstituer les caractères de ces milieux de dépôt (bathymétrie, hydrodynamisme, paramètres chimiques,...)<br />La composition et diversité des RC est fonction de l'action simultanée de tous les facteurs de la sédimentogenèse,
+                  les facteurs biologiques étant particulièrement importants.
+                </p>
+                <p>
+                  Les RC sont plus sensibles à la diagenèse ; elles sont en effet le siège de cimentations rapides, conduisant à la lithification, car l'eau de la mer est la source des ciments carbonatés en équilibre chimique avec les grains qui sont de même nature (carbonatés
+                  également). Les structures ainsi que les caractères des milieux de dépôt sont donc préservés ; les critères diagénétiques constituent un élément d'identification des paléoenvironnements.
+                </p>
+                <p>
+                  Les plateformes carbonatées actuelles (ex. Golfe Persique, Bahamas, Floride, ect.) sont situées en zone inter-tropicale ; les carbonates existent cependant à des latitudes plus élevées, dans un contexte plutôt tempéré (ex. côtes mediterranéennes).
+                </p>
+                <p>
+                  Comme la plupart des roches sédimentaires, les RC sont constituées par : une phase granulaire + une phase de liaison + des porosités.
+                </p>
+                <h3>Constituants des roches carbonatées</h3>
+                <ol>
+                  <li>
+                    <strong>La phase granulaire</strong><br />
+                    <p>
+                      <em>Rappel :</em> Tous les éléments de la phase granulaire se forment dans les milieux de dépôt.<br />Les grains ou éléments sont soit structurés comme les bioclastes, les oolithes, les oncolithes, les lithoclastes et les agrégats,
+                      ou sans structure visible, c'est-à-dire micritiques (micrite = cristaux non visibles au microscope optique, de 1 à 4 microns) comme les pellets et les pelletoïdes (+ quelques types particuliers de lithoclastes).
+                    </p>
+                    <ul>
+                      <li>
+                        <em>Les bioclastes</em>
+                      </li>
+                      <li>
+                        <em>Les oolithes</em>
+                      </li>
+                      <li>
+                        <em>Les oncolithes</em>
+                      </li>
+                      <li>
+                        <em>Les grains micritiques sans structure visibles (pellets et pelletoïdes)</em>
+                      </li>
+                      <li>
+                        <em>Les grains composés : agrégats et lithoclastes</em>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>La phase de liaison</strong> (ou liant)<br />
+                  </li>
+                  <li>
+                    <strong>Les porosités</strong><br />
+                  </li>
+                </ol>
+                <h3>Classifications et nomenclatures</h3>
+                <h3>Eléments de diagénèse</h3>
+                <h3>Dolomies et dolomitisation</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="row">
+      <div class="col-sm-offset-1 col-sm-4 col-xs-6 text-center">Pour mater le projet, visitez le repository sur <a href="https://github.com/geotechdev/fstgat_gag" target="_blank"><i class="fab fa-github"></i> Github</a>, ou pour signaler un problème, envoyez un email sur l'adresse suivante
+        <a><i class="fas fa-at"></i> aitabdelmalekma@gmail.com</a>. Merci pour votre visite !</div>
+      <div class="col-sm-7 col-xs-6 text-center">Tous droits réservés <i class="far fa-copyright"></i> 2018, FSTGAT_GAG</div>
+    </footer>
+  </div>
+  <!--js libraries and bootstrap js cdn-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- compiled and minified js for bootstrap 3.3.7 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
