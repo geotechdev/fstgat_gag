@@ -51,10 +51,10 @@ var compte = {
     titulaire: "Alex",
     solde: 0,
     crediter: function(royal) {
-        this.solde = this.solde + royal;
+        this.solde += royal;
     },
     debiter: function(royal) {
-        this.solde = this.solde - royal;
+        this.solde -= royal;
     },
     decrire: function() {
         var description = "Titulaire : " + this.titulaire + ", solde : " + this.solde + " euros.";
