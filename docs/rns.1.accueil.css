@@ -17,6 +17,12 @@ font-family: 'PT Sans Narrow', sans-serif;
     .row {
         font-size: 0.8em;
     }
+    #showcase h1 {
+        margin: 0;
+        padding: 4%;
+        font-weight: 900;
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -34,7 +40,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 .row {
     font-family: 'PT Sans Narrow', sans-serif;
 }
-
 .navbar-brand p {
     padding: 5px;
     margin: auto;
@@ -52,7 +57,7 @@ font-family: 'PT Sans Narrow', sans-serif;
     padding: 5px;
     border-radius: 20px;
 }
-
+/*
 .jumbotron h1 {
     font-weight: 900;
     display: inline;
@@ -63,28 +68,65 @@ font-family: 'PT Sans Narrow', sans-serif;
     color: whitesmoke;
     background-color: black;
 }
-
+*/
+#showcase {
+    position: relative;
+    bottom: 18px;
+    background-image: url('../bg.jpg');
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#showcase h1 {
+    margin: 0;
+    padding: 2%;
+    font-weight: 900;
+    font-size: 5em;
+    color: black;
+    opacity: 0.8;
+    text-shadow: 2px 0px 0px white;
+}
+#showcase h1:hover {
+    color: rgb(41, 47, 61);
+}
+#showcase a {
+    text-shadow: 2px 0px 0px white;
+    text-decoration: none;
+    color:  rgb(27, 32, 43);
+    font-weight: 900;
+    font-size: 1.4em;
+}
+#showcase a:hover {
+    background-color: rgb(33,33,33);
+    color: white;
+    text-shadow: none;
+}
 .nb {
     padding: 20px;
-    position: relative;
-    bottom: 25px;
-    background-color: red;
+    background-color: rgb(169, 4, 4);
     color: whitesmoke;
     font-weight: 900;
     font-size: 1.2em;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
+    position: relative;
+    bottom: 18px;
 }
 
 .offline {
     padding: 20px;
-    position: relative;
-    bottom: 25px;
     background-color: rgb(33, 33, 33);
     color: whitesmoke;
     font-weight: 900;
     font-size: 1.2em;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    bottom: 18px;
 }
 
 div img {
